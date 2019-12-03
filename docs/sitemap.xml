@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/docs/application-developers-guide/architecture-overview/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/application-developers-guide/cli/cli/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/local/mac/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/overview/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/local/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/application-developers-guide/api/rest-api/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/gcp/gcp/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/local/windows/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/application-developers-guide/client/client/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/getting-started/local/linux/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/application-developers-guide/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/application-developers-guide/sds/state-delta-subscriber/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/terminology/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/application-developers-guide/tp/transaction-processor-and-famlies/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/troubleshooting/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/community/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/parameter-reference/</loc>
+    <lastmod>2019-11-29T13:28:10-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/index.json</loc>
+    <lastmod>2019-11-27T11:49:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-12-03T13:29:20-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/search/</loc>
+    <lastmod>2019-11-27T11:49:21-06:00</lastmod>
+  </url>
+  
+</urlset>

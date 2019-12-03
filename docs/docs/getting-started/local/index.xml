@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ConsenSource – Running ConsenSource Locally</title>
-    <link>/docs/getting-started/local/</link>
+    <link>https://target.github.io/consensource-docs/docs/getting-started/local/</link>
     <description>Recent content in Running ConsenSource Locally on ConsenSource</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/getting-started/local/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://target.github.io/consensource-docs/docs/getting-started/local/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: macOS</title>
-      <link>/docs/getting-started/local/mac/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/local/mac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/local/mac/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/local/mac/</guid>
       <description>
         
         
@@ -65,7 +65,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;
@@ -87,10 +87,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: Windows</title>
-      <link>/docs/getting-started/local/windows/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/local/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/local/windows/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/local/windows/</guid>
       <description>
         
         
@@ -119,7 +119,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;
@@ -141,10 +141,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: Linux</title>
-      <link>/docs/getting-started/local/linux/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/local/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/local/linux/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/local/linux/</guid>
       <description>
         
         
@@ -173,7 +173,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;

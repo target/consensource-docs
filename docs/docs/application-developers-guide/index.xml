@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ConsenSource – Application Developer&#39;s Guide</title>
-    <link>/docs/application-developers-guide/</link>
+    <link>https://target.github.io/consensource-docs/docs/application-developers-guide/</link>
     <description>Recent content in Application Developer&#39;s Guide on ConsenSource</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/application-developers-guide/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://target.github.io/consensource-docs/docs/application-developers-guide/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Architecture Overview</title>
-      <link>/docs/application-developers-guide/architecture-overview/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/architecture-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/architecture-overview/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/architecture-overview/</guid>
       <description>
         
         
@@ -28,10 +28,10 @@
     
     <item>
       <title>Docs: Command Line Interface</title>
-      <link>/docs/application-developers-guide/cli/cli/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/cli/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/cli/cli/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/cli/cli/</guid>
       <description>
         
         
@@ -48,10 +48,10 @@
     
     <item>
       <title>Docs: REST API</title>
-      <link>/docs/application-developers-guide/api/rest-api/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/api/rest-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/api/rest-api/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/api/rest-api/</guid>
       <description>
         
         
@@ -68,10 +68,10 @@
     
     <item>
       <title>Docs: Client</title>
-      <link>/docs/application-developers-guide/client/client/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/client/client/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/client/client/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/client/client/</guid>
       <description>
         
         
@@ -88,10 +88,10 @@
     
     <item>
       <title>Docs: State Delta Subscriber</title>
-      <link>/docs/application-developers-guide/sds/state-delta-subscriber/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/sds/state-delta-subscriber/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/</guid>
       <description>
         
         
@@ -137,10 +137,10 @@ The reporting DB should follow the &lt;a href=&#34;https://en.wikipedia.org/wiki
     
     <item>
       <title>Docs: Transaction Processor &amp; Families</title>
-      <link>/docs/application-developers-guide/tp/transaction-processor-and-famlies/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/tp/transaction-processor-and-famlies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/tp/transaction-processor-and-famlies/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/tp/transaction-processor-and-famlies/</guid>
       <description>
         
         

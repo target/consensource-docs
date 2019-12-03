@@ -1,7 +1,7 @@
 ---
 title: "Community"
 linkTitle: "Community"
-weight: 10
+weight: 7
 description: >
   Resources to join the ConsenSource developer's community
 ---

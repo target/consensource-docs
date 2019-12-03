@@ -1,24 +1,51 @@
-
 ---
 title: "Application Developer's Guide"
 linkTitle: "Application Developer's Guide"
-weight: 6
+weight: 4
 description: >
   Deeper dives on the individual services that make up the ConsenSource application
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
 
-Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.
+## Before You Begin
 
-You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the [Docsy User Guide](https://docsy.dev/docs/) with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section. 
+A working knowledge of the following tools will be helpful when running and developing ConsenSource:
 
-Each task should give the user
+- [Hyperledger Sawtooth](https://sawtooth.hyperledger.org/docs/core/releases/1.2/introduction.html)
+- [Protocol Buffers (Protobufs)](https://developers.google.com/protocol-buffers/docs/overview)
+- [Docker](https://docs.docker.com/get-started/)
+- [Rust/Rustup](https://www.rust-lang.org/tools/install)
 
-* The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they're the same for all the page's tasks. "All these tasks assume that you understand....and that you have already....").
-* What this task accomplishes.
-* Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.
-* If appropriate, links to related concept, tutorial, or example pages.
+## Running Local Images
 
+While developing, in order to run your updated code you will need to build and run local docker images rather than the images that have been pulled down from DockerHub. 
+
+### Replace A Remote Image With A Local Image
+
+To replace a Docker image pulled from a remote source with a local build, you can run this command:
+```
+docker-compose -f docker-compose.yaml up -d --build <service_name>
+```
+
+For example, to replace the CLI image, you can run:
+```
+docker-compose -f docker-compose.yaml up -d --build cli
+```
+
+### Replace A Local Image With A Remote Image 
+
+To pull an image from DockerHub back down and replace a local image, you can run:
+```
+docker-compose pull <service_name>
+```
+
+For example, to replace a local CLI image with one from DockerHub, you can run:
+```
+docker-compose pull cli
+```
+
+## Troubleshooting
+
+See the [ConsenSource troubleshooting guide](/docs/troubleshooting/)
+
+## Guides

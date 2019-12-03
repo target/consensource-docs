@@ -52,12 +52,12 @@ id = "UA-00000000-0"
 # Top-level navigation (horizontal)
 [[menu.main]]
     name = "Overview"
-    weight = 10
+    weight = 2
     url = "/docs/overview"
 [[menu.main]]
-    name = "View The App"
-    weight = 50
-    url = "https://github.com/target/ConsenSource/"
+    name = "ConsenSource.org"
+    weight = 1
+    url = "https://35.201.118.216"
 
 # Everything below this are Site Params
 
@@ -70,7 +70,12 @@ privacy_policy = "https://github.com/target/consensource/blob/master/LICENSE"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+version_menu = "v0.1"
+
+[[params.versions]]
+  version = "v0.1"
+  githubbranch = "v0.1"
+  url = "https://v0-1.consensource-docs.org"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/target/consensource"

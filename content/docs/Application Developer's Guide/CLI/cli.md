@@ -1,0 +1,11 @@
+---
+title: "Command Line Interface"
+linkTitle: "CLI"
+weight: 1
+description: >
+  Overview and examples of the ConsenSource CLI
+---
+
+{{< alert title="GitHub Link">}}
+https://github.com/target/consensource/tree/master/cli
+{{< /alert >}}

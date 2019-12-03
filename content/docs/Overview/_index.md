@@ -4,8 +4,10 @@ weight: 1
 description: An introduction to ConsenSource and Distributed Ledger Technology (DLT)
 ---
 
-{{< alert >}}ConsenSource is an application that leverages Distributed Ledger Technology (DLT) 
-that aims to help retailers, factories, certifying bodies and standards bodies increase transparency and efficiency around the certification process.{{< /alert >}}
+{{< alert >}}
+The ConsenSource application  leverages Distributed Ledger Technology (DLT)  to help retailers, factories, certifying bodies 
+and standards bodies increase transparency and efficiency around the certification process.
+{{< /alert >}}
 
 ### The Problem
 
@@ -17,9 +19,16 @@ In practice, each retailer ends up independently verifying these claims with the
 
 ConsenSource solves this problem using _Distributed Ledger Technology (DLT)_. The application serves as a common platform to verify and display the certifications and audit data between retailers, factories, certifying bodies, and standards bodies.
 
-The DLT allows all partners to share ownership of this data. Each partner is tasked with the duty of owning their data and keeping this information up to date, shifting the onus of data accuracy to the impacted party.
+DLT allows all partners to share ownership of this data. Each partner is tasked with the duty of owning their data and keeping this information up to date, shifting the onus of data accuracy to the relevant party.
+Each participant in the network plays a unique role. 
 
-The blockchain participants uniquely interact with the ConsenSource application. Standards bodies create standards and accredit certifying bodies. These certifying bodies are then able to audit and certify factories against the standards they are accredited for. Factories are able to request these certifications and in-person audits, so that certifying bodies are able to issue certificates based on in-person, off-chain audit results. This allows retailers to view and trust the resulting data from these interactions as well as general contact and location information on each of these entities.
+**Standards bodies** create standards and accredit certifying bodies. 
+
+**Certifying bodies** are then able to audit and certify factories against the standards they are accredited for.
+
+**Factories** are able to request these certifications and in-person audits, so that certifying bodies are able to issue certificates based on in-person, off-chain audit results. 
+
+**Retailers** are able to view and trust the resulting data from these interactions as well as general contact and location information on each of these entities.
 
 ### Who Should Use ConsenSource?
 
@@ -38,8 +47,6 @@ The blockchain participants uniquely interact with the ConsenSource application.
   - Benefit 1
   - Benefit 2
   
-### The ConsenSource Mission
-
 ## Distributed Ledger Technology (DLT) Overview
 
 ### What Is A Blockchain?
@@ -60,13 +67,24 @@ In a permsionless system it must be assumed that all actors on the network are p
 
 **Permissioned systems** aim to solve these two problems of efficiency and control. ConsenSource uses [Hyperledger Sawtooth](https://www.hyperledger.org/projects/sawtooth), an enterprise DLT, to provide an additional layer of security and access control by allowing for _on-chain governance_. 
 
-In practice, this means that all members of the network must reach consensus around which new actors are allowed to join the network, the types of actions they can perform, and more. A permissioned DLT lets ConsenSource use a more efficient consensus algorithms ([more info here](test.com)) because there is a base level of trust between participants in the network.
+In practice, this means that all members of the network must reach consensus around which new actors are allowed to join the network, the types of actions they can perform, and more. A permissioned DLT lets ConsenSource use a more efficient consensus algorithms ([more info here - todo](test.com)) because there is a base level of trust between participants in the network.
 
-{{< alert >}}ConsenSource uses a _permissioned_ DLT to provide both greater efficiency, and control of the network.{{< /alert >}}
+{{< alert title="Takeaway">}}
+ConsenSource uses a _permissioned_ DLT to provide both greater efficiency, and control, of the network.
+{{< /alert >}}
 
 ### Why Use DLT?
 
 #### Benefits
+
+- _Enhanced Trust_
+  - In a centralized database solution, all parties must trust the owner of the database - in situations with potentially untrusted participants, this is often not practical.
+    DLT enforces trust by enabling all parties to share an immutable and complete record of all transactions that occur in the network.
+- _Distributed Responsibility_
+  - Rather than a single party bearing the burden of maintaing and running a centralized database, DLT allows multiple parties to collaboratively maintain a ledger of transactions.
+- _Improved Efficiency_
+  - The process of manually reconciling multiple ledgers, between multiple parties, is time consuming, expensive, and error prone. By sharing a single digital ledger, all parties recieve more 
+    accurate data while performing less work.
 
 #### Tradeoffs
 

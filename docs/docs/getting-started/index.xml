@@ -1,0 +1,61 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConsenSource – Getting Started</title>
+    <link>/docs/getting-started/</link>
+    <description>Recent content in Getting Started on ConsenSource</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Running ConsenSource Locally</title>
+      <link>/docs/getting-started/local/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/local/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;The following tools are required to run ConsenSource locally:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/get-started/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; - &lt;code&gt;brew install docker&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you wish to perform development work, the following additional tools are required:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.npmjs.com/about-npm/&#34; target=&#34;_blank&#34;&gt;npm&lt;/a&gt; - &lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rust-lang.org/tools/install&#34; target=&#34;_blank&#34;&gt;Rust/Rustup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;guides&#34;&gt;Guides&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Running ConsenSource In GCP</title>
+      <link>/docs/getting-started/gcp/gcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/gcp/gcp/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

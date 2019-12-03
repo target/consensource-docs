@@ -1,5 +1,6 @@
 baseURL = "/"
 title = "ConsenSource"
+publishDir = "docs"
 
 enableRobotsTXT = true
 

@@ -1,10 +1,10 @@
 # Creating and updating the ConsenSource docs
 
-Welcome to the GitHub repository for ConsenSource's public website. The docs are hosted at https://www.example.org.
+Welcome to the GitHub repository for ConsenSource's public website. The docs are hosted at https://target.github.io/consensource-docs.
 
-We use Hugo to format and generate our website, the Docsy theme for styling and site structure, and ??? to manage the deployment of the site. Hugo is an open-source static site generator that provides us with templates, content organization in a standard directory structure, and a website generation engine. You write the pages in Markdown, and Hugo wraps them up into a website.
+We use Hugo to format and generate our website, the Docsy theme for styling and site structure, and GitHub Pages to manage the deployment of the site. Hugo is an open-source static site generator that provides us with templates, content organization in a standard directory structure, and a website generation engine. You write the pages in Markdown, and Hugo wraps them up into a website.
 
-### Fork and clone the website repo and run a local website server
+## Running the docs site locally
 
 Follow the usual GitHub workflow to fork the repo on GitHub and clone it to your
 local machine, then use your local repo as input to your Hugo web server:
@@ -45,6 +45,16 @@ Useful docs:
 - [Hugo basic usage](https://gohugo.io/getting-started/usage/)
 - [Hugo site directory structure](https://gohugo.io/getting-started/directory-structure/)
 - [hugo server reference](https://gohugo.io/commands/hugo_server/)
+
+## Updating the live docs site
+
+The [GitHub Pages config](https://github.com/target/consensource-docs/settings) for this site is set to republish on any updates to the `docs` folder in the `master` branch. 
+In our [config.toml](https://github.com/target/consensource-docs/blob/master/config.toml#L3), we have also configured Hugo to output it's build process to our `docs` folder.
+
+To publish a new update to the live docs site:
+1. Run the `hugo` command from the root of the project - this will populate the `docs` folder with your new content.
+2. Open a PR to the `master` branch from your fork
+3. When that PR is merged, the docs site will automatically republish.
 
 ## Menu structure
 

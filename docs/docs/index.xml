@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ConsenSource – Documentation</title>
-    <link>/docs/</link>
+    <link>https://target.github.io/consensource-docs/docs/</link>
     <description>Recent content in Documentation on ConsenSource</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://target.github.io/consensource-docs/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Command Line Interface</title>
-      <link>/docs/application-developers-guide/cli/cli/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/cli/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/cli/cli/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/cli/cli/</guid>
       <description>
         
         
@@ -35,10 +35,10 @@
     
     <item>
       <title>Docs: macOS</title>
-      <link>/docs/getting-started/local/mac/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/local/mac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/local/mac/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/local/mac/</guid>
       <description>
         
         
@@ -85,7 +85,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;
@@ -107,10 +107,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: REST API</title>
-      <link>/docs/application-developers-guide/api/rest-api/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/api/rest-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/api/rest-api/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/api/rest-api/</guid>
       <description>
         
         
@@ -127,10 +127,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: Running ConsenSource In GCP</title>
-      <link>/docs/getting-started/gcp/gcp/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/gcp/gcp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/gcp/gcp/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/gcp/gcp/</guid>
       <description>
         
         
@@ -140,10 +140,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: Windows</title>
-      <link>/docs/getting-started/local/windows/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/local/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/local/windows/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/local/windows/</guid>
       <description>
         
         
@@ -172,7 +172,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;
@@ -194,10 +194,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: Client</title>
-      <link>/docs/application-developers-guide/client/client/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/client/client/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/client/client/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/client/client/</guid>
       <description>
         
         
@@ -214,10 +214,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: Linux</title>
-      <link>/docs/getting-started/local/linux/</link>
+      <link>https://target.github.io/consensource-docs/docs/getting-started/local/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/getting-started/local/linux/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/getting-started/local/linux/</guid>
       <description>
         
         
@@ -246,7 +246,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;
@@ -268,10 +268,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
     
     <item>
       <title>Docs: State Delta Subscriber</title>
-      <link>/docs/application-developers-guide/sds/state-delta-subscriber/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/sds/state-delta-subscriber/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/</guid>
       <description>
         
         
@@ -317,10 +317,10 @@ The reporting DB should follow the &lt;a href=&#34;https://en.wikipedia.org/wiki
     
     <item>
       <title>Docs: Transaction Processor &amp; Families</title>
-      <link>/docs/application-developers-guide/tp/transaction-processor-and-famlies/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/tp/transaction-processor-and-famlies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/application-developers-guide/tp/transaction-processor-and-famlies/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/tp/transaction-processor-and-famlies/</guid>
       <description>
         
         
@@ -1164,10 +1164,10 @@ This Request will be submitted on behalf of a Factory.&lt;/p&gt;
     
     <item>
       <title>Docs: Parameter Reference</title>
-      <link>/docs/parameter-reference/</link>
+      <link>https://target.github.io/consensource-docs/docs/parameter-reference/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/docs/parameter-reference/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/parameter-reference/</guid>
       <description>
         
         

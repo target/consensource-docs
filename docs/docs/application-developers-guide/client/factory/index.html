@@ -7,6 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+<link rel="alternate" type="application/rss&#43;xml" href="https://target.github.io/consensource-docs/docs/application-developers-guide/client/factory/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -20,26 +21,19 @@
 <link rel="icon" type="image/png" href="/consensource-docs/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/consensource-docs/favicons/android-192x192.png" sizes="192x192">
 
-<title>State Delta Subscriber | ConsenSource</title><meta property="og:title" content="State Delta Subscriber" />
-<meta property="og:description" content="Overview and examples of the ConsenSource State Delta Subscriber
+<title>Factory View | ConsenSource</title><meta property="og:title" content="Factory View" />
+<meta property="og:description" content="Overview of the Factory View of the ConsenSource client.
 " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://target.github.io/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/" />
-<meta property="article:modified_time" content="2019-12-03T13:29:20-06:00" />
-<meta itemprop="name" content="State Delta Subscriber">
-<meta itemprop="description" content="Overview and examples of the ConsenSource State Delta Subscriber
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://target.github.io/consensource-docs/docs/application-developers-guide/client/factory/" />
+
+<meta itemprop="name" content="Factory View">
+<meta itemprop="description" content="Overview of the Factory View of the ConsenSource client.
 ">
 
-
-<meta itemprop="dateModified" content="2019-12-03T13:29:20-06:00" />
-<meta itemprop="wordCount" content="419">
-
-
-
-<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="State Delta Subscriber"/>
-<meta name="twitter:description" content="Overview and examples of the ConsenSource State Delta Subscriber
+<meta name="twitter:title" content="Factory View"/>
+<meta name="twitter:description" content="Overview of the Factory View of the ConsenSource client.
 "/>
 
 
@@ -58,9 +52,9 @@
 
 
 
-    <title>State Delta Subscriber | ConsenSource</title>
+    <title>Factory View | ConsenSource</title>
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -230,7 +224,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/consensource-docs/docs/application-developers-guide/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Application Developer&#39;s Guide</a>
+    <a  href="/consensource-docs/docs/application-developers-guide/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Application Developer&#39;s Guide</a>
   </li>
   <ul>
     <li class="collapse show" id="consensource-docs-docs-application-developers-guide">
@@ -282,10 +276,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/consensource-docs/docs/application-developers-guide/client/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Client</a>
+    <a  href="/consensource-docs/docs/application-developers-guide/client/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Client</a>
   </li>
   <ul>
-    <li class="collapse " id="consensource-docs-docs-application-developers-guide-client">
+    <li class="collapse show" id="consensource-docs-docs-application-developers-guide-client">
       
       
       
@@ -322,10 +316,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/consensource-docs/docs/application-developers-guide/client/factory/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Factory View</a>
+    <a  href="/consensource-docs/docs/application-developers-guide/client/factory/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Factory View</a>
   </li>
   <ul>
-    <li class="collapse " id="consensource-docs-docs-application-developers-guide-client-factory">
+    <li class="collapse show" id="consensource-docs-docs-application-developers-guide-client-factory">
       
       
       
@@ -390,7 +384,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-consensource-docs-docs-application-developers-guide-sds-state-delta-subscriber" href="/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/">State Delta Subscriber</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-consensource-docs-docs-application-developers-guide-sds-state-delta-subscriber" href="/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/">State Delta Subscriber</a>
       
       
       
@@ -503,8 +497,8 @@
 
 
 
-<a href="https://github.com/target/consensource-docs/edit/master/content/en/docs/Application%20Developer%27s%20Guide/SDS/state-delta-subscriber.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/target/consensource-docs/issues/new?title=State%20Delta%20Subscriber" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/target/consensource-docs/edit/master/content/en/docs/Application%20Developer%27s%20Guide/Client/Factory/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/target/consensource-docs/issues/new?title=Factory%20View" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -513,23 +507,14 @@
 
 
 
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#reporting-database-structure">Reporting Database Structure</a></li>
-<li><a href="#fork-resolution">Fork resolution</a></li>
-</ul></li>
-</ul>
-</nav>
-
-
-
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
 		
+
+
+
 
 
 
@@ -554,8 +539,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="https://target.github.io/consensource-docs/docs/application-developers-guide/client/">Client</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://target.github.io/consensource-docs/docs/application-developers-guide/sds/state-delta-subscriber/">State Delta Subscriber</a>
+	<a href="https://target.github.io/consensource-docs/docs/application-developers-guide/client/factory/">Factory View</a>
 </li>
 
 	</ol>
@@ -563,44 +555,62 @@
 
             
 <div class="td-content">
-	<h1>State Delta Subscriber</h1>
-	<div class="lead">Overview and examples of the ConsenSource State Delta Subscriber</div>
+	<h1>Factory View</h1>
+	<div class="lead">Overview of the Factory View of the ConsenSource client.</div>
 	
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">GitHub Link</h4>
-<a href="https://github.com/target/consensource/tree/master/state_delta_subscriber" target="_blank">https://github.com/target/consensource/tree/master/state_delta_subscriber</a>
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
 </div>
-
-
-<p>The goal of State Delta Export is to provide a mechanism for exporting on-chain state values from a validator to an external data store. This allows applications to efficiently query their state values. The state delta export implements an event subscription client that subscribes to block commit events and Sawtooth state delta at specific addresses (in this case we will subscribe to all state delta events at the Certificate Registry namespace). Sawtooth sends these events whenever the validator’s state is updated. The events contain the raw state data at the updated addresses. The event subscription client processes the event data and uses it to update the reporting database, an off-chain copy of blockchain state. The REST API can query this database when a client needs to get information from the blockchain.</p>
-
-<p>This off-chain state access comes at the expense of relying on a single validator for state updates, this puts the application at risk of having stale data or forked state if the validator supplying the state updates comes out of consensus or is disconnected from the network. Below are guidelines on how to structure the reporting DB so fork resolution is easy.</p>
-
-<h2 id="reporting-database-structure">Reporting Database Structure</h2>
-
-<p><img src="https://github.com/target/consensource-docs/tree/master/content/docs/Application%20Developer's%20Guide/SDS/ConsenSource_DBSchema.png?raw=true" alt="DB Schema" /></p>
-
-<p>The reporting DB has three types of tables: sawtooth-core tables (Blocks), domain-specific state tables (Agents, Organizations, Authorizations, Certificates, CertificateData), and application tables (tables supporting off-chain application components, such as Auth, in the schema above).
-The reporting DB should follow the <a href="https://en.wikipedia.org/wiki/Slowly_changing_dimension#Type_2:_add_new_row" target="_blank">Type 2 of Slowly Changing Dimensions</a> data management pattern, so that fork resolution is easy.</p>
-
-<p>For use in a State Delta Export, a state table includes additional columns of start_block_num and end_block_num. The ​start_block_num​ and ​end_block_num​ columns specify the block range in which that state value is set or exists. Values that are valid as of the current block have ​end_block_num​ set to MAX_UINT_64.</p>
-
-<p>Because there might be state objects in the database that refer to the same object in state at different block heights (with different block numbers), the primary key for each object cannot be the same as the object’s natural key in blockchain state. Instead, use a sequence ID column or another unique ID scheme as the primary key. For better query performance, we recommend creating indexes on the natural key of the entry and the end_block_num.</p>
-
-<h2 id="fork-resolution">Fork resolution</h2>
-
-<p>The following pseudocode demonstrates the fork resolution process:</p>
-
-<pre><code>resolve_fork(existing_block):
-  for table in domain_tables:						
-    delete from table where start_block_num &gt;= existing_block.block_num
-    update table set end_block_num = MAX_UINT_64 \					
-      where end_block_num &gt;= existing_block.block_num
-  delete from block where block_num &gt;= existing_block.block_num
-</code></pre>
 
 	
 		<style>
@@ -664,10 +674,9 @@ The reporting DB should follow the <a href="https://en.wikipedia.org/wiki/Slowly
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified December 3, 2019: <a  href="https://github.com/target/consensource-docs/commit/a8b1f47552104cd6ac8d70e830c6099ddfd70efa">Further outlining for each section (a8b1f47)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified December 6, 2019: <a  href="https://github.com/target/consensource-docs/commit/5906d21263bf897dc4057ea75237755b540493cc">Additional content and About section (5906d21)</a>
 </div>
 </div>
-
 
           </main>
         </div>

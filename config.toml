@@ -52,10 +52,6 @@ id = "UA-00000000-0"
 
 # Top-level navigation (horizontal)
 [[menu.main]]
-    name = "Overview"
-    weight = 2
-    url = "docs/overview"
-[[menu.main]]
     name = "ConsenSource.org"
     weight = 1
     url = "https://35.201.118.216"

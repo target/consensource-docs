@@ -24,12 +24,12 @@ While developing, in order to run your updated code you will need to build and r
 
 To replace a Docker image pulled from a remote source with a local build, you can run this command:
 ```
-docker-compose -f docker-compose.yaml up -d --build <service_name>
+docker-compose -d --build <service_name>
 ```
 
 For example, to replace the CLI image, you can run:
 ```
-docker-compose -f docker-compose.yaml up -d --build cli
+docker-compose -d --build cli
 ```
 
 ### Replace A Local Image With A Remote Image 

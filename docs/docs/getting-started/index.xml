@@ -23,24 +23,6 @@
         
         
         
-
-&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
-
-&lt;p&gt;The following tools are required to run ConsenSource locally:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/get-started/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; - &lt;code&gt;brew install docker&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you wish to perform development work, the following additional tools are required:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.npmjs.com/about-npm/&#34; target=&#34;_blank&#34;&gt;npm&lt;/a&gt; - &lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.rust-lang.org/tools/install&#34; target=&#34;_blank&#34;&gt;Rust/Rustup&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;guides&#34;&gt;Guides&lt;/h2&gt;
-
       </description>
     </item>
     

@@ -68,20 +68,20 @@
     
     <item>
       <title>Docs: Client</title>
-      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/client/client/</link>
+      <link>https://target.github.io/consensource-docs/docs/application-developers-guide/client/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/client/client/</guid>
+      <guid>https://target.github.io/consensource-docs/docs/application-developers-guide/client/</guid>
       <description>
         
         
         
 
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;GitHub Link&lt;/h4&gt;
-&lt;a href=&#34;https://github.com/target/consensource/tree/master/client&#34; target=&#34;_blank&#34;&gt;https://github.com/target/consensource/tree/master/client&lt;/a&gt;
-&lt;/div&gt;
+&lt;p&gt;The ConsenSource UI is comprised of a number of Mithril applications under the same router. The default application that is served from the index.html page is for retailers. To access the other apps, specify the relative .html file in /public such as localhost:8080/index_auditor.html.&lt;/p&gt;
 
+&lt;p&gt;The documentation below will provide a higher-level overview of the UI/UX interactions that can be performed through the client. Developer who wish to run or contribute to the client application should view &lt;a href=&#34;https://github.com/target/consensource/blob/master/client/README.md&#34; target=&#34;_blank&#34;&gt;project README&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;h2 id=&#34;guides&#34;&gt;Guides&lt;/h2&gt;
 
       </description>
     </item>

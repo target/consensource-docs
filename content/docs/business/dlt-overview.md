@@ -1,5 +1,6 @@
 ---
 title: "Distributed Ledger Technology (DLT) Overview"
+weight: 1
 description: 
     An overview of Distributed Ledger Technology/Blockchain and how it is leveraged in ConsenSource
 ---
@@ -51,7 +52,7 @@ ConsenSource uses a _permissioned_ DLT to provide both greater efficiency, and c
   - ConsenSource utilizes an efficient consensus algorithm to reduce network latency.
 - _Multiple parties need to run validator node_
   - The premise of blockchain technology is built around multiple parties running nodes that validate transactions, rather than a single entity managing and maintaining the network.
-  - This enforces transparency and trust around the validity of all transactions. ConsenSource has [documentation](docs/getting-started/) on running a node in multiple environments.
+  - This enforces transparency and trust around the validity of all transactions. ConsenSource has [documentation](/consensource-docs/docs/developer/getting-started/) on running a node in multiple environments.
 
 ## Why Sawtooth?
 

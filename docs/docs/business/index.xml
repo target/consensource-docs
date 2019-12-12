@@ -95,7 +95,7 @@ accurate data while performing less work.&lt;/li&gt;
 
 &lt;ul&gt;
 &lt;li&gt;The premise of blockchain technology is built around multiple parties running nodes that validate transactions, rather than a single entity managing and maintaining the network.&lt;/li&gt;
-&lt;li&gt;This enforces transparency and trust around the validity of all transactions. ConsenSource has &lt;a href=&#34;docs/getting-started/&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; on running a node in multiple environments.&lt;/li&gt;
+&lt;li&gt;This enforces transparency and trust around the validity of all transactions. ConsenSource has &lt;a href=&#34;https://target.github.io/consensource-docs/consensource-docs/docs/developer/getting-started/&#34;&gt;documentation&lt;/a&gt; on running a node in multiple environments.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -103,6 +103,32 @@ accurate data while performing less work.&lt;/li&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3BVUiPQuv-w?start=28&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Context and Problem Statement</title>
+      <link>https://target.github.io/consensource-docs/docs/business/context-problem-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/business/context-problem-statement/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Value Proposition</title>
+      <link>https://target.github.io/consensource-docs/docs/business/value-proposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/business/value-proposition/</guid>
+      <description>
+        
+        
+        
       </description>
     </item>
     

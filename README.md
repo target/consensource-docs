@@ -58,6 +58,7 @@ To publish a new update to the live docs site:
 
 ## Menu structure
 
+### Navbar
 The site theme has one Hugo menu (`main`), which defines the top navigation bar. 
 You can find and adjust the definition of the menu in the [site configuration 
 file](https://github.com/target/consensource-docs/blob/master/config.toml). 
@@ -80,6 +81,14 @@ weight: 1
 description: A high-level overview of the ConsenSource application
 ---
 ```
+
+### Docs sidebar
+
+The sidebar menu in the `docs` folder is automatically constructed by Docsy. The structure is based off of the folder structure in the `docs` folder - each subfolder that contains 
+an `_index.md` file will create a new section in the sidebar. Siblings of the `_index.md` for a given folder will be displayed underneath the section for that folder with the value of `title` or
+`linkTitle` in the front matter for the page.
+
+More info on the Docs sidebar can be found in the [Docsy documentation](https://www.docsy.dev/docs/adding-content/content/#organizing-your-documentation)
 
 ## Working with the theme
 

@@ -38,8 +38,8 @@
 
 
 
-<link rel="preload" href="/consensource-docs/scss/main.min.470f8f14e4ff314749ead4a2937cd0b872ee19572bd7fcfe1478309a7c081d72.css" as="style">
-<link href="/consensource-docs/scss/main.min.470f8f14e4ff314749ead4a2937cd0b872ee19572bd7fcfe1478309a7c081d72.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/consensource-docs/scss/main.min.5649880a78e700ae33d531bb1afa4bc299a8eff1f4647c46c256bd59d1fb25c4.css" as="style">
+<link href="/consensource-docs/scss/main.min.5649880a78e700ae33d531bb1afa4bc299a8eff1f4647c46c256bd59d1fb25c4.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -69,7 +69,7 @@
 				
 				<a class="nav-link" href="https://35.201.118.216" target="_blank" ><span>ConsenSource.org</span></a>
 			</li>
-			
+            
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
 				
 				
@@ -79,21 +79,21 @@
 				
 				<a class="nav-link" href="/consensource-docs/about/" ><span>About</span></a>
 			</li>
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a class="nav-link" href="/consensource-docs/docs/" ><span>Documentation</span></a>
-			</li>
-			
+            
+            <li class="nav-item dropdown d-none d-lg-block">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Documentation (WIP)
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="/docs/business">Business</a>
+        <a class="dropdown-item" href="/docs/developer">Developer</a>
+    </div>
+    
+            </li>
 			
 			<li class="nav-item dropdown d-none d-lg-block">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	v0.1
+	Releases
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
@@ -102,7 +102,7 @@
 </div>
 
 			</li>
-			
+            
 			
 		</ul>
 	</div>
@@ -129,15 +129,15 @@
 
 
 
-<link rel="preload" as="image" href="/consensource-docs/featured-background_hu687dbe0987ede5e37e00d709f65f8b15_221243_960x540_fill_catmullrom_top_2.png" media="(max-width: 1200px)">
-<link rel="preload" as="image" href="/consensource-docs/featured-background_hu687dbe0987ede5e37e00d709f65f8b15_221243_1920x1080_fill_catmullrom_top_2.png" media="(min-width: 1200px)">
+<link rel="preload" as="image" href="/consensource-docs/featured-background_hu919e1b111d7580bd089eeb6acc112cba_2441262_960x540_fill_catmullrom_top_2.png" media="(max-width: 1200px)">
+<link rel="preload" as="image" href="/consensource-docs/featured-background_hu919e1b111d7580bd089eeb6acc112cba_2441262_1920x1080_fill_catmullrom_top_2.png" media="(min-width: 1200px)">
 <style>
 #td-cover-block-0 {
-    background-image: url(/consensource-docs/featured-background_hu687dbe0987ede5e37e00d709f65f8b15_221243_960x540_fill_catmullrom_top_2.png); 
+    background-image: url(/consensource-docs/featured-background_hu919e1b111d7580bd089eeb6acc112cba_2441262_960x540_fill_catmullrom_top_2.png); 
 }
 @media only screen and (min-width: 1200px) {
     #td-cover-block-0 {
-        background-image: url(/consensource-docs/featured-background_hu687dbe0987ede5e37e00d709f65f8b15_221243_1920x1080_fill_catmullrom_top_2.png); 
+        background-image: url(/consensource-docs/featured-background_hu919e1b111d7580bd089eeb6acc112cba_2441262_1920x1080_fill_catmullrom_top_2.png); 
     }
 }
 </style>
@@ -151,7 +151,7 @@
           
           <div class="pt-3 lead">
             <div class="mx-auto">
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/consensource-docs/about/">
+    <a class="btn btn-lg btn-secondary mr-3 mb-4" href="/consensource-docs/about/">
         Read The Docs <i class="fas fa-arrow-alt-circle-right ml-2"></i>
     </a>
     <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/target/consensource" target="blank">
@@ -180,10 +180,12 @@
 
 
 <a id="td-block-1" class="td-offset-anchor"></a>
-<section class="row td-box td-box--primary position-relative td-box--gradient td-box--height-auto">
+<section class="row td-box td-box--white position-relative td-box--gradient td-box--height-auto">
 	<div class="container text-center td-arrow-down">
 		<span class="h4 mb-0">
-			ConsenSource is designed to leverage <em>permissioned Distributed Ledger Technolgy</em> (Blockchain) to bring transparency
+			<h3 class="section-head">What is ConsenSource?</h4>
+<br />
+ConsenSource is an application designed to leverage <em>permissioned Distributed Ledger Technolgy</em> (Blockchain) to bring transparency
 and trust to the sourcing industry - making it easier to find and verify the certifications and audit histories of a factory.
 		</span>
 	</div>
@@ -224,8 +226,8 @@ are authentic.</p>
     <i class="fas fa-user-check"></i>
   </div>
   <h4 class="h3">Permissioned</h4>
-  <p class="mb-0"><p>The ConsenSource governing body controls permissioning of all actors of the network,
-limiting access to only approved and relevant organizations..</p>
+  <p class="mb-0"><p>The ConsenSource governing body controls permissioning of all actors in the network,
+limiting access to only approved and relevant organizations.</p>
 </p>
   
 </div>
@@ -241,7 +243,7 @@ limiting access to only approved and relevant organizations..</p>
 
  
 <a id="td-block-3" class="td-offset-anchor"></a>
-<section class="row td-box td-box--3 td-box--gradient td-box--height-auto">
+<section class="row td-box td-box--white td-box--gradient td-box--height-auto">
 	<div class="col">
 		<div class="row ">
 			<div class="col">

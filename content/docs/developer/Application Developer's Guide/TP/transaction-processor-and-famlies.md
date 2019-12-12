@@ -11,6 +11,10 @@ https://github.com/target/consensource/tree/master/processor
 
 ConsenSource is a certificate registry, as data pertaining to the process of factory certification is captured in the ledger state. This Certificate Registry (henceforth referred to as CR) Transaction family displays the interactions currently implemented for any participant that affects state data. Furthermore, this lays out the logic behind all interactions to verify the data submitted to the ledger.
 
+## Relevant Links
+
+- [Assembling the Future of Smart Contracts with Sawtooth Sabre](https://www.hyperledger.org/blog/2019/02/08/assembling-the-future-of-smart-contracts-with-sawtooth-sabre)
+
 ## Addressing
 
 CR data is stored in state using addresses generated from the CR Transaction

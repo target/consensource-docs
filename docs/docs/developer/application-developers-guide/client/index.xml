@@ -1,0 +1,69 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConsenSource – Client</title>
+    <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/</link>
+    <description>Recent content in Client on ConsenSource</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Retailer View</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/retailer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/retailer/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Factory View</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/factory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/factory/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Certifying View</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/certifying-body/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/certifying-body/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Standards Body View</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/standards-body/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/standards-body/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConsenSource – Terminology</title>
+    <link>https://target.github.io/consensource-docs/docs/developer/terminology/</link>
+    <description>Recent content in Terminology on ConsenSource</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/terminology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

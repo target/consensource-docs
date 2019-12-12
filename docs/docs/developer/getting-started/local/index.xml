@@ -1,0 +1,212 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConsenSource – Running ConsenSource Locally</title>
+    <link>/docs/developer/getting-started/local/</link>
+    <description>Recent content in Running ConsenSource Locally on ConsenSource</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/developer/getting-started/local/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: macOS</title>
+      <link>/docs/developer/getting-started/local/mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/getting-started/local/mac/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;The following tools are required to run ConsenSource locally:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/get-started/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; - &lt;code&gt;brew install docker&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you wish to perform development work, the following additional tools are required:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.npmjs.com/about-npm/&#34; target=&#34;_blank&#34;&gt;npm&lt;/a&gt; - &lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rust-lang.org/tools/install&#34; target=&#34;_blank&#34;&gt;Rust/Rustup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;how-to-run-consensource&#34;&gt;How To Run ConsenSource&lt;/h2&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+The ConsenSource application is comprised of a number of Docker images. To run the app locally, we use &lt;code&gt;docker-compose&lt;/code&gt; to orchestrate the container network.
+&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;https://github.com/target/consensource&#34; target=&#34;_blank&#34;&gt;ConsenSource repo&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Via HTTPS: &lt;code&gt;git clone https://github.com/target/consensource.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Via SSH: &lt;code&gt;git clone git@github.com:target/consensource.git&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd consensource&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pull down Docker images from DockerHub
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker-compose pull&lt;/code&gt;(the images are quite long and will take some time to download)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Start the network
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker-compose up&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;available-services&#34;&gt;Available Services&lt;/h3&gt;
+
+&lt;p&gt;The following services should be available on your local machine at this point:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ConsenSource Client: &lt;a href=&#34;http://localhost:8080/&#34; target=&#34;_blank&#34;&gt;http://localhost:8080/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ConsenSource REST API: &lt;a href=&#34;http://localhost:9009/&#34; target=&#34;_blank&#34;&gt;http://localhost:9009/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sawtooth REST API: &lt;a href=&#34;http://localhost:8008/&#34; target=&#34;_blank&#34;&gt;http://localhost:8008/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;log-in-to-a-container&#34;&gt;Log In To A Container&lt;/h3&gt;
+
+&lt;p&gt;To log in to a running container for any of the services, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker exec -it &amp;lt;container_name&amp;gt; /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, to log in to the CLI, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker exec -it consensource-cli /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Windows</title>
+      <link>/docs/developer/getting-started/local/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/getting-started/local/windows/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;how-to-run-consensource&#34;&gt;How To Run ConsenSource&lt;/h2&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+The ConsenSource application is comprised of a number of Docker images. To run the app locally, we use &lt;code&gt;docker-compose&lt;/code&gt; to orchestrate the container network.
+&lt;/div&gt;
+
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h3 id=&#34;available-services&#34;&gt;Available Services&lt;/h3&gt;
+
+&lt;p&gt;The following services should be available on your local machine at this point:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ConsenSource Client: &lt;a href=&#34;http://localhost:8080/&#34; target=&#34;_blank&#34;&gt;http://localhost:8080/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ConsenSource REST API: &lt;a href=&#34;http://localhost:9009/&#34; target=&#34;_blank&#34;&gt;http://localhost:9009/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sawtooth REST API: &lt;a href=&#34;http://localhost:8008/&#34; target=&#34;_blank&#34;&gt;http://localhost:8008/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;log-in-to-a-container&#34;&gt;Log In To A Container&lt;/h3&gt;
+
+&lt;p&gt;To log in to a running container for any of the services, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker exec -it &amp;lt;container_name&amp;gt; /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, to log in to the CLI, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker exec -it consensource-cli /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Linux</title>
+      <link>/docs/developer/getting-started/local/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/getting-started/local/linux/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;how-to-run-consensource&#34;&gt;How To Run ConsenSource&lt;/h2&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+The ConsenSource application is comprised of a number of Docker images. To run the app locally, we use &lt;code&gt;docker-compose&lt;/code&gt; to orchestrate the container network.
+&lt;/div&gt;
+
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h3 id=&#34;available-services&#34;&gt;Available Services&lt;/h3&gt;
+
+&lt;p&gt;The following services should be available on your local machine at this point:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ConsenSource Client: &lt;a href=&#34;http://localhost:8080/&#34; target=&#34;_blank&#34;&gt;http://localhost:8080/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ConsenSource REST API: &lt;a href=&#34;http://localhost:9009/&#34; target=&#34;_blank&#34;&gt;http://localhost:9009/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sawtooth REST API: &lt;a href=&#34;http://localhost:8008/&#34; target=&#34;_blank&#34;&gt;http://localhost:8008/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;log-in-to-a-container&#34;&gt;Log In To A Container&lt;/h3&gt;
+
+&lt;p&gt;To log in to a running container for any of the services, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker exec -it &amp;lt;container_name&amp;gt; /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, to log in to the CLI, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker exec -it consensource-cli /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

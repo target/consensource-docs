@@ -1,8 +1,6 @@
 ---
 title: "Documentation"
-weight: 20
 hide_feedback: true
-menu:
-  main:
-    weight: 20
+description: 
+    Business and developer focused documentation for the ConsenSource application
 ---

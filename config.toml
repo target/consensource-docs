@@ -1,4 +1,4 @@
-baseURL = "https://target.github.io/consensource-docs/"
+baseURL = "/"
 title = "ConsenSource"
 publishDir = "docs"
 
@@ -54,10 +54,9 @@ id = "UA-00000000-0"
 [[menu.main]]
     name = "ConsenSource.org"
     weight = 1
-    url = "https://35.201.118.216"
+    url = "https://35.201.118.216"  
 
 # Everything below this are Site Params
-
 [params]
 copyright = "Target Brands"
 privacy_policy = "https://github.com/target/consensource/blob/master/LICENSE"
@@ -70,7 +69,7 @@ github_repo = "https://github.com/target/consensource-docs"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "v0.1"
+version_menu = "Releases"
 
 # Enable Algolia DocSearch
 algolia_docsearch = true

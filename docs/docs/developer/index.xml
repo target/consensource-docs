@@ -1,0 +1,592 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConsenSource – Developer Documentation</title>
+    <link>/docs/developer/</link>
+    <description>Recent content in Developer Documentation on ConsenSource</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/docs/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Getting Started</title>
+      <link>/docs/developer/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/getting-started/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Application Developer&#39;s Guide</title>
+      <link>/docs/developer/application-developers-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/application-developers-guide/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;before-you-begin&#34;&gt;Before You Begin&lt;/h2&gt;
+
+&lt;p&gt;A working knowledge of the following tools will be helpful when running and developing ConsenSource:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.2/introduction.html&#34; target=&#34;_blank&#34;&gt;Hyperledger Sawtooth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/protocol-buffers/docs/overview&#34; target=&#34;_blank&#34;&gt;Protocol Buffers (Protobufs)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.docker.com/get-started/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rust-lang.org/tools/install&#34; target=&#34;_blank&#34;&gt;Rust/Rustup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;running-local-images&#34;&gt;Running Local Images&lt;/h2&gt;
+
+&lt;p&gt;While developing, in order to run your updated code you will need to build and run local docker images rather than the images that have been pulled down from DockerHub.&lt;/p&gt;
+
+&lt;h3 id=&#34;replace-a-remote-image-with-a-local-image&#34;&gt;Replace A Remote Image With A Local Image&lt;/h3&gt;
+
+&lt;p&gt;To replace a Docker image pulled from a remote source with a local build, you can run this command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose -d --build &amp;lt;service_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, to replace the CLI image, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose -d --build cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;replace-a-local-image-with-a-remote-image&#34;&gt;Replace A Local Image With A Remote Image&lt;/h3&gt;
+
+&lt;p&gt;To pull an image from DockerHub back down and replace a local image, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose pull &amp;lt;service_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, to replace a local CLI image with one from DockerHub, you can run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose pull cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;See the &lt;a href=&#34;/docs/troubleshooting/&#34;&gt;ConsenSource troubleshooting guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;guides&#34;&gt;Guides&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Terminology</title>
+      <link>/docs/developer/terminology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/terminology/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Troubleshooting</title>
+      <link>/docs/developer/troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/troubleshooting/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This is a placeholder page that shows you how to use this template site.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;If your project has an API, configuration, or other reference - anything that users need to look up that’s at an even lower level than a single task - put (or link to it) here. You can serve and link to generated reference docs created using Doxygen,
+Javadoc, or other doc generation tools by putting them in your &lt;code&gt;static/&lt;/code&gt; directory. Find out more in &lt;a href=&#34;https://docsy.dev/docs/adding-content/content/#adding-static-content&#34; target=&#34;_blank&#34;&gt;Adding static content&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Community</title>
+      <link>/docs/developer/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/community/</guid>
+      <description>
+        
+        
+        
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;These basic sample guidelines assume that your Docsy site is deployed using Netlify and your files are stored in GitHub. You can use the guidelines &amp;ldquo;as is&amp;rdquo; or adapt them with your own instructions: for example, other deployment options, information about your doc project&amp;rsquo;s file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. &lt;a href=&#34;https://github.com/kubeflow/website/blob/master/README.md&#34; target=&#34;_blank&#34;&gt;Kubeflow&lt;/a&gt; has a great example.&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;We use &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; to format and generate our website, the
+&lt;a href=&#34;https://github.com/google/docsy&#34; target=&#34;_blank&#34;&gt;Docsy&lt;/a&gt; theme for styling and site structure,
+and &lt;a href=&#34;https://www.netlify.com/&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt; to manage the deployment of the site.
+Hugo is an open-source static site generator that provides us with templates,
+content organisation in a standard directory structure, and a website generation
+engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps them up into a website.&lt;/p&gt;
+
+&lt;p&gt;All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+&lt;a href=&#34;https://help.github.com/articles/about-pull-requests/&#34; target=&#34;_blank&#34;&gt;GitHub Help&lt;/a&gt; for more
+information on using pull requests.&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start-with-netlify&#34;&gt;Quick start with Netlify&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a quick guide to updating the docs. It assumes you&amp;rsquo;re familiar with the
+GitHub workflow and you&amp;rsquo;re happy to use the automated preview of your doc
+updates:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Fork the &lt;a href=&#34;https://github.com/google/docsy-example&#34; target=&#34;_blank&#34;&gt;Goldydocs repo&lt;/a&gt; on GitHub.&lt;/li&gt;
+&lt;li&gt;Make your changes and send a pull request (PR).&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re not yet ready for a review, add &amp;ldquo;WIP&amp;rdquo; to the PR name to indicate
+it&amp;rsquo;s a work in progress. (&lt;strong&gt;Don&amp;rsquo;t&lt;/strong&gt; add the Hugo property
+&amp;ldquo;draft = true&amp;rdquo; to the page front matter, because that prevents the
+auto-deployment of the content preview described in the next point.)&lt;/li&gt;
+&lt;li&gt;Wait for the automated PR workflow to do some checks. When it&amp;rsquo;s ready,
+you should see a comment like this: &lt;strong&gt;deploy/netlify — Deploy preview ready!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Details&lt;/strong&gt; to the right of &amp;ldquo;Deploy preview ready&amp;rdquo; to see a preview
+of your updates.&lt;/li&gt;
+&lt;li&gt;Continue updating your doc and pushing your changes until you&amp;rsquo;re happy with
+the content.&lt;/li&gt;
+&lt;li&gt;When you&amp;rsquo;re ready for a review, add a comment to the PR, and remove any
+&amp;ldquo;WIP&amp;rdquo; markers.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;updating-a-single-page&#34;&gt;Updating a single page&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve just spotted something you&amp;rsquo;d like to change while using the docs, Docsy has a shortcut for you:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Click &lt;strong&gt;Edit this page&lt;/strong&gt; in the top right hand corner of the page.&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t already have an up to date fork of the project repo, you are prompted to get one - click &lt;strong&gt;Fork this repository and propose changes&lt;/strong&gt; or &lt;strong&gt;Update your Fork&lt;/strong&gt; to get an up to date version of the project to edit. The appropriate page in your fork is displayed in edit mode.&lt;/li&gt;
+&lt;li&gt;Follow the rest of the &lt;a href=&#34;#quick-start-with-netlify&#34;&gt;Quick start with Netlify&lt;/a&gt; process above to make, preview, and propose your changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;previewing-your-changes-locally&#34;&gt;Previewing your changes locally&lt;/h2&gt;
+
+&lt;p&gt;If you want to run your own local Hugo server to preview your changes as you work:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Follow the instructions in &lt;a href=&#34;/docs/getting-started&#34;&gt;Getting started&lt;/a&gt; to install Hugo and any other tools you need. You&amp;rsquo;ll need at least &lt;strong&gt;Hugo version 0.45&lt;/strong&gt; (we recommend using the most recent available version), and it must be the &lt;strong&gt;extended&lt;/strong&gt; version, which supports SCSS.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fork the &lt;a href=&#34;https://github.com/google/docsy-example&#34; target=&#34;_blank&#34;&gt;Goldydocs repo&lt;/a&gt; repo into your own project, then create a local copy using &lt;code&gt;git clone&lt;/code&gt;. Don’t forget to use &lt;code&gt;--recurse-submodules&lt;/code&gt; or you won’t pull down some of the code you need to generate a working site.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Run &lt;code&gt;hugo server&lt;/code&gt; in the site root directory. By default your site will be available at &lt;a href=&#34;http://localhost:1313/&#34; target=&#34;_blank&#34;&gt;http://localhost:1313/&lt;/a&gt;. Now that you&amp;rsquo;re serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Continue with the usual GitHub workflow to edit files, commit them, push the
+changes up to your fork, and create a pull request.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;creating-an-issue&#34;&gt;Creating an issue&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve found a problem in the docs, but you&amp;rsquo;re not sure how to fix it yourself, please create an issue in the &lt;a href=&#34;https://github.com/google/docsy-example/issues&#34; target=&#34;_blank&#34;&gt;Goldydocs repo&lt;/a&gt;. You can also create an issue about a specific page by clicking the &lt;strong&gt;Create Issue&lt;/strong&gt; button in the top right hand corner of the page.&lt;/p&gt;
+
+&lt;h2 id=&#34;useful-resources&#34;&gt;Useful resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;wherever it goes&#34; target=&#34;_blank&#34;&gt;Docsy user guide&lt;/a&gt;: All about Docsy, including how it manages navigation, look and feel, and multi-language support.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/documentation/&#34; target=&#34;_blank&#34;&gt;Hugo documentation&lt;/a&gt;: Comprehensive reference for Hugo.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34; target=&#34;_blank&#34;&gt;Github Hello World!&lt;/a&gt;: A basic introduction to GitHub concepts and workflow.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parameter Reference</title>
+      <link>/docs/developer/parameter-reference/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/developer/parameter-reference/</guid>
+      <description>
+        
+        
+        
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This is a placeholder page. Replace it with your own content.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;. &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Links&lt;/a&gt; should be blue with no underlines (unless hovered over).&lt;/p&gt;
+
+&lt;p&gt;There should be whitespace between paragraphs. Vape migas chillwave sriracha poutine try-hard distillery. Tattooed shabby chic small batch, pabst art party heirloom letterpress air plant pop-up. Sustainable chia skateboard art party banjo cardigan normcore affogato vexillologist quinoa meggings man bun master cleanse shoreditch readymade. Yuccie prism four dollar toast tbh cardigan iPhone, tumblr listicle live-edge VHS. Pug lyft normcore hot chicken biodiesel, actually keffiyeh thundercats photo booth pour-over twee fam food truck microdosing banh mi. Vice activated charcoal raclette unicorn live-edge post-ironic. Heirloom vexillologist coloring book, beard deep v letterpress echo park humblebrag tilde.&lt;/p&gt;
+
+&lt;p&gt;90&amp;rsquo;s four loko seitan photo booth gochujang freegan tumeric listicle fam ugh humblebrag. Bespoke leggings gastropub, biodiesel brunch pug fashion axe meh swag art party neutra deep v chia. Enamel pin fanny pack knausgaard tofu, artisan cronut hammock meditation occupy master cleanse chartreuse lumbersexual. Kombucha kogi viral truffaut synth distillery single-origin coffee ugh slow-carb marfa selfies. Pitchfork schlitz semiotics fanny pack, ugh artisan vegan vaporware hexagon. Polaroid fixie post-ironic venmo wolf ramps &lt;strong&gt;kale chips&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There should be no margin above this first sentence.&lt;/p&gt;
+
+&lt;p&gt;Blockquotes should be a lighter gray with a border along the left side in the secondary color.&lt;/p&gt;
+
+&lt;p&gt;There should be no margin below this final sentence.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;first-header-2&#34;&gt;First Header 2&lt;/h2&gt;
+
+&lt;p&gt;This is a normal paragraph following a header. Knausgaard kale chips snackwave microdosing cronut copper mug swag synth bitters letterpress glossier &lt;strong&gt;craft beer&lt;/strong&gt;. Mumblecore bushwick authentic gochujang vegan chambray meditation jean shorts irony. Viral farm-to-table kale chips, pork belly palo santo distillery activated charcoal aesthetic jianbing air plant woke lomo VHS organic. Tattooed locavore succulents heirloom, small batch sriracha echo park DIY af. Shaman you probably haven&amp;rsquo;t heard of them copper mug, crucifix green juice vape &lt;em&gt;single-origin coffee&lt;/em&gt; brunch actually. Mustache etsy vexillologist raclette authentic fam. Tousled beard humblebrag asymmetrical. I love turkey, I love my job, I love my friends, I love Chardonnay!&lt;/p&gt;
+
+&lt;p&gt;Deae legum paulatimque terra, non vos mutata tacet: dic. Vocant docuique me plumas fila quin afuerunt copia haec o neque.&lt;/p&gt;
+
+&lt;p&gt;On big screens, paragraphs and headings should not take up the full container width, but we want tables, code blocks and similar to take the full width.&lt;/p&gt;
+
+&lt;p&gt;Scenester tumeric pickled, authentic crucifix post-ironic fam freegan VHS pork belly 8-bit yuccie PBR&amp;amp;B. &lt;strong&gt;I love this life we live in&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;second-header-2&#34;&gt;Second Header 2&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;header-3&#34;&gt;Header 3&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;This is a code block following a header.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next level leggings before they sold out, PBR&amp;amp;B church-key shaman echo park. Kale chips occupy godard whatever pop-up freegan pork belly selfies. Gastropub Belinda subway tile woke post-ironic seitan. Shabby chic man bun semiotics vape, chia messenger bag plaid cardigan.&lt;/p&gt;
+
+&lt;h4 id=&#34;header-4&#34;&gt;Header 4&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;header-5&#34;&gt;Header 5&lt;/h5&gt;
+
+&lt;ol&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h6 id=&#34;header-6&#34;&gt;Header 6&lt;/h6&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What&lt;/th&gt;
+&lt;th&gt;Follows&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;There&amp;rsquo;s a horizontal rule above and below this.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Here is an unordered list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Liverpool F.C.&lt;/li&gt;
+&lt;li&gt;Chelsea F.C.&lt;/li&gt;
+&lt;li&gt;Manchester United F.C.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And an ordered list:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Michael Brecker&lt;/li&gt;
+&lt;li&gt;Seamus Blake&lt;/li&gt;
+&lt;li&gt;Branford Marsalis&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And an unordered task list:&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Create a Hugo theme&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Add task lists to it&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Take a vacation&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And a &amp;ldquo;mixed&amp;rdquo; task list:&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Pack bags&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Travel!&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And a nested list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jackson 5
+
+&lt;ul&gt;
+&lt;li&gt;Michael&lt;/li&gt;
+&lt;li&gt;Tito&lt;/li&gt;
+&lt;li&gt;Jackie&lt;/li&gt;
+&lt;li&gt;Marlon&lt;/li&gt;
+&lt;li&gt;Jermaine&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;TMNT
+
+&lt;ul&gt;
+&lt;li&gt;Leonardo&lt;/li&gt;
+&lt;li&gt;Michelangelo&lt;/li&gt;
+&lt;li&gt;Donatello&lt;/li&gt;
+&lt;li&gt;Raphael&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Definition lists can be used with Markdown syntax. Definition headers are bold.&lt;/p&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Name&lt;/dt&gt;
+&lt;dd&gt;Godzilla&lt;/dd&gt;
+&lt;dt&gt;Born&lt;/dt&gt;
+&lt;dd&gt;1952&lt;/dd&gt;
+&lt;dt&gt;Birthplace&lt;/dt&gt;
+&lt;dd&gt;Japan&lt;/dd&gt;
+&lt;dt&gt;Color&lt;/dt&gt;
+&lt;dd&gt;Green&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Tables should have bold headings and alternating shaded rows.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Artist&lt;/th&gt;
+&lt;th&gt;Album&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael Jackson&lt;/td&gt;
+&lt;td&gt;Thriller&lt;/td&gt;
+&lt;td&gt;1982&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Prince&lt;/td&gt;
+&lt;td&gt;Purple Rain&lt;/td&gt;
+&lt;td&gt;1984&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Beastie Boys&lt;/td&gt;
+&lt;td&gt;License to Ill&lt;/td&gt;
+&lt;td&gt;1986&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If a table is too wide, it should scroll horizontally.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Artist&lt;/th&gt;
+&lt;th&gt;Album&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Label&lt;/th&gt;
+&lt;th&gt;Awards&lt;/th&gt;
+&lt;th&gt;Songs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael Jackson&lt;/td&gt;
+&lt;td&gt;Thriller&lt;/td&gt;
+&lt;td&gt;1982&lt;/td&gt;
+&lt;td&gt;Epic Records&lt;/td&gt;
+&lt;td&gt;Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical&lt;/td&gt;
+&lt;td&gt;Wanna Be Startin&amp;rsquo; Somethin&amp;rsquo;, Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Prince&lt;/td&gt;
+&lt;td&gt;Purple Rain&lt;/td&gt;
+&lt;td&gt;1984&lt;/td&gt;
+&lt;td&gt;Warner Brothers Records&lt;/td&gt;
+&lt;td&gt;Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal&lt;/td&gt;
+&lt;td&gt;Let&amp;rsquo;s Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I&amp;rsquo;m a Star, Purple Rain&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Beastie Boys&lt;/td&gt;
+&lt;td&gt;License to Ill&lt;/td&gt;
+&lt;td&gt;1986&lt;/td&gt;
+&lt;td&gt;Mercury Records&lt;/td&gt;
+&lt;td&gt;noawardsbutthistablecelliswide&lt;/td&gt;
+&lt;td&gt;Rhymin &amp;amp; Stealin, The New Style, She&amp;rsquo;s Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Code snippets like &lt;code&gt;var foo = &amp;quot;bar&amp;quot;;&lt;/code&gt; can be shown inline.&lt;/p&gt;
+
+&lt;p&gt;Also, &lt;code&gt;this should vertically align&lt;/code&gt; &lt;del&gt;&lt;code&gt;with this&lt;/code&gt;&lt;/del&gt; &lt;del&gt;and this&lt;/del&gt;.&lt;/p&gt;
+
+&lt;p&gt;Code can also be shown in a block element.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
+bar := &amp;quot;foo&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Javascript&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;var foo = &amp;quot;bar&amp;quot;;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;foo = &amp;quot;bar&amp;quot;{&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Small images should be shown at their actual size.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Large images should always scale down and fit in the content container.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/1024px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
+
+&lt;h3 id=&#34;alerts&#34;&gt;Alerts&lt;/h3&gt;
+
+&lt;p&gt;
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+This is an alert.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+This is an alert with a title.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+This is an alert with a title and &lt;strong&gt;Markdown&lt;/strong&gt;.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+This is a successful alert.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+This is a warning.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+This is a warning with a title.
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;another-heading&#34;&gt;Another Heading&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

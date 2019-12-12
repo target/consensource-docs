@@ -16,7 +16,9 @@
     "url": "https://github.com/bep/tech-doc-hugo/issues"
   },
   "homepage": "https://github.com/bep/tech-doc-hugo#readme",
-  "dependencies": {},
+  "dependencies": {
+    "p": "^0.2.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.6",
     "postcss-cli": "^5.0.1"

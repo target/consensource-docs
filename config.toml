@@ -69,15 +69,15 @@ github_repo = "https://github.com/target/consensource-docs"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+# version_menu = "Releases"
 
 # Enable Algolia DocSearch
 algolia_docsearch = true
 
-[[params.versions]]
-  version = "v0.1"
-  githubbranch = "v0.1"
-  url = "https://v0-1.consensource-docs.org"
+# [[params.versions]]
+#   version = "v0.1"
+#   githubbranch = "v0.1"
+#   url = "https://v0-1.consensource-docs.org"
 
 # User interface configuration
 [params.ui]

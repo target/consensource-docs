@@ -8,12 +8,11 @@ menu:
 
 {{% blocks/cover title="About ConsenSource" height="auto" %}}
 
-The ConsenSource application leverages Distributed Ledger Technology (DLT)  to help retailers, factories, certifying bodies 
-and standards bodies increase transparency and efficiency around the certification process.
+The ConsenSource application leverages Distributed Ledger Technology (DLT)  to help brands and retailers, factories, certifying bodies and standards bodies increase transparency and efficiency around the certification process.
 
-For many retailers, a commom pain point in the sourcing process is the discovery and verification of the certification claims for a given factory. If a retailer wishes to only do business with factories that have a given environmental certification, where can they find a filtered list of only the factories that are certified? Furthermore, _how can they trust that the certification is valid_?
+For many brands and retailers, a commom pain point in the sourcing process is the discovery and verification of the certification claims for a given factory. If a brand or retailer wishes to only do business with factories that have a given certification, where can they find a filtered list of only the factories that are certified? Furthermore, _how can they trust that the certification is valid_?
 
-In practice, each retailer ends up independently verifying these claims with the ceritfying body that performed the original audit. This process is time-consuming, expensive, and error prone. 
+In practice, each brand and retailer ends up independently verifying these claims with the ceritfying body that performed the original audit. This process is time-consuming, expensive, and error prone. 
 {{% /blocks/cover %}}
 
 {{% blocks/section type="section" color="dark" %}}
@@ -21,7 +20,7 @@ In practice, each retailer ends up independently verifying these claims with the
 
 <br />
 
-ConsenSource solves this problem of trust and authenticity within the certification process using _Distributed Ledger Technology (DLT)_. The application serves as a common platform to verify and display the certifications and audit data between retailers, factories, certifying bodies, and standards bodies.
+ConsenSource solves this problem of trust and authenticity within the certification process using _Distributed Ledger Technology (DLT)_. The application serves as a common platform to verify and display the certifications and audit data between brands and retailers, factories, certifying bodies, and standards bodies.
 
 DLT allows all partners to share ownership of this data. Each partner is tasked with the duty of owning their data and keeping this information up to date, shifting the onus of data accuracy to the relevant party.
 Each participant in the network plays a unique role. 
@@ -32,7 +31,7 @@ Each participant in the network plays a unique role.
 
 - **Factories** are able to request these certifications and in-person audits, so that certifying bodies are able to issue certificates based on in-person, off-chain audit results. 
 
-- **Retailers** are able to view and trust the resulting data from these interactions as well as general contact and location information on each of these entities.
+- **Brands and Retailers** are able to view and trust the resulting data from these interactions as well as general contact and location information on each of these entities.
 {{% /blocks/section %}}
 
 {{% blocks/section type="section" color="white" %}}
@@ -42,7 +41,7 @@ Each participant in the network plays a unique role.
 
 <table>
   <tr>
-   <td><strong>Retailers</strong>
+   <td><strong>Brands and Retailers</strong>
    </td>
    <td>
     <ul>

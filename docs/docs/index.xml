@@ -242,7 +242,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
       <description>
         
         
-        
+        &lt;p&gt;In today&amp;rsquo;s ever changing environment, companies are continually challenged with keeping accurate records.  This ongoing record and data maintenance challenge is true across many facets of business, including keeping accurate records of certifications related to sourcing activities from where companies source their products and raw materials.  Even when these records are being provided via a website or some other electronic mechanism, they generally are not provided with the customer and recipient of those records at heart, making the ability to keep up to date and accurate records difficult, if not impossible.&lt;/p&gt;
+
+&lt;p&gt;Meaning, the often antiquated and outdated way that certification records are provided to others creates an ever increasing challenge and risk to brands and retailers who not only desire and rely on accurate information, but also find this information critically important to their business.  Ultimately, the increasing push for transparency and an increasingly high expectation from consumers is why we believe a change in how this information is captured and provided needs to be made on a broad scale.  ConsenSource aims to solve this problem.&lt;/p&gt;
+
       </description>
     </item>
     
@@ -376,7 +379,10 @@ The ConsenSource application is comprised of a number of Docker images. To run t
       <description>
         
         
-        
+        &lt;p&gt;As mentioned as part of the business problem, ConsenSource aims to solve the issue with ongoing maintenance and record keeping as it relates to certificiations that are issued to suppliers and vendors of brands and retailers.  Fundamentally shifting the onus of maintenance and upkeep from all of the disparate parties that receive and maintain this information today to a decentralized platform in the future means that businesses and consumers of that information will more broadly benefit from the timely and accurate records those certifications are intended to represent.&lt;/p&gt;
+
+&lt;p&gt;The platform is also intended to create additional incentives related to awareness and marketability related to the other personas that are intended to interact and contribute data to the platform.  The platform is intended to benefit and incentivize each persona uniquely and not create disincentives for any given persona ultimately for its adoption and future growth.&lt;/p&gt;
+
       </description>
     </item>
     

@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ConsenSource – Certifying View</title>
+    <title>ConsenSource Docs – Certifying View</title>
     <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/certifying-body/</link>
-    <description>Recent content in Certifying View on ConsenSource</description>
+    <description>Recent content in Certifying View on ConsenSource Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/certifying-body/index.xml" rel="self" type="application/rss+xml" />

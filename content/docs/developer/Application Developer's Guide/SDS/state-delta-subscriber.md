@@ -15,7 +15,7 @@ This off-chain state access comes at the expense of relying on a single validato
 
 ## Reporting Database Structure
 
-![DB Schema](https://github.com/target/consensource-docs/tree/master/content/docs/Application%20Developer's%20Guide/SDS/ConsenSource_DBSchema.png?raw=true)
+![DB Schema](https://github.com/target/consensource-docs/blob/master/content/docs/developer/Application%20Developer's%20Guide/SDS/ConsenSource_DBSchema.png?raw=true)
 
 The reporting DB has three types of tables: sawtooth-core tables (Blocks), domain-specific state tables (Agents, Organizations, Authorizations, Certificates, CertificateData), and application tables (tables supporting off-chain application components, such as Auth, in the schema above).
 The reporting DB should follow the [Type 2 of Slowly Changing Dimensions](https://en.wikipedia.org/wiki/Slowly_changing_dimension#Type_2:_add_new_row) data management pattern, so that fork resolution is easy.

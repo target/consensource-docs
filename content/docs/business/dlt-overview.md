@@ -1,6 +1,6 @@
 ---
 title: "Distributed Ledger Technology (DLT) Overview"
-weight: 1
+weight: 3
 description: 
     An overview of Distributed Ledger Technology/Blockchain and how it is leveraged in ConsenSource
 ---
@@ -23,7 +23,7 @@ In a permsionless system it must be assumed that all actors on the network are p
 
 **Permissioned systems** aim to solve these two problems of efficiency and control. ConsenSource uses [Hyperledger Sawtooth](https://www.hyperledger.org/projects/sawtooth), an enterprise DLT, to provide an additional layer of security and access control by allowing for _on-chain governance_. 
 
-In practice, this means that all members of the network must reach consensus around which new actors are allowed to join the network, the types of actions they can perform, and more. A permissioned DLT lets ConsenSource use a more efficient consensus algorithms ([more info here - todo](test.com)) because there is a base level of trust between participants in the network.
+In practice, this means that all members of the network must reach consensus around which new actors are allowed to join the network, the types of actions they can perform, and more. A permissioned DLT lets ConsenSource use a more efficient consensus algorithm ([more info here - todo](test.com)) because there is a base level of trust between participants in the network.
 
 {{< alert title="Takeaway">}}
 ConsenSource uses a _permissioned_ DLT to provide both greater efficiency, and control, of the network.

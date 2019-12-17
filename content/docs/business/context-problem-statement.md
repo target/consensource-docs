@@ -1,6 +1,6 @@
 ---
 title: "Context and Problem Statement"
-weight: 2
+weight: 1
 description: 
     General overview and background leading to the ConsenSource problem statement
 ---

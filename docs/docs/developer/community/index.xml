@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ConsenSource – Community</title>
+    <title>ConsenSource Docs – Community</title>
     <link>https://target.github.io/consensource-docs/docs/developer/community/</link>
-    <description>Recent content in Community on ConsenSource</description>
+    <description>Recent content in Community on ConsenSource Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/community/index.xml" rel="self" type="application/rss+xml" />

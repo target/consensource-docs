@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ConsenSource – Application Developer&#39;s Guide</title>
+    <title>ConsenSource Docs – Application Developer&#39;s Guide</title>
     <link>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/</link>
-    <description>Recent content in Application Developer&#39;s Guide on ConsenSource</description>
+    <description>Recent content in Application Developer&#39;s Guide on ConsenSource Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/application-developers-guide/index.xml" rel="self" type="application/rss+xml" />
@@ -77,9 +77,9 @@
         
         
 
-&lt;p&gt;The ConsenSource UI is comprised of a number of Mithril applications under the same router. The default application that is served from the index.html page is for retailers. To access the other apps, specify the relative .html file in /public such as localhost:8080/index_auditor.html.&lt;/p&gt;
+&lt;p&gt;The ConsenSource UI is comprised of a number of Mithril applications under the same router. The default application that is served from the _ page is for retailers. To access the other apps, specify the relative .html file in &lt;em&gt;/public&lt;/em&gt; such as &lt;a href=&#34;localhost:8080/index_auditor.html&#34; target=&#34;_blank&#34;&gt;localhost:8080/index_auditor.html&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The documentation below will provide a higher-level overview of the UI/UX interactions that can be performed through the client. Developer who wish to run or contribute to the client application should view &lt;a href=&#34;https://github.com/target/consensource/blob/master/client/README.md&#34; target=&#34;_blank&#34;&gt;project README&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;The documentation below will provide a higher-level overview of the UI/UX interactions that can be performed through the client. Developers who wish to run or contribute to the client application should view the &lt;a href=&#34;https://github.com/target/consensource/blob/master/client/README.md&#34; target=&#34;_blank&#34;&gt;project README&lt;/a&gt; for more information.&lt;/p&gt;
 
 &lt;h3 id=&#34;relevant-sawtooth-docs&#34;&gt;Relevant Sawtooth Docs&lt;/h3&gt;
 
@@ -117,7 +117,7 @@
 
 &lt;h2 id=&#34;reporting-database-structure&#34;&gt;Reporting Database Structure&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://github.com/target/consensource-docs/tree/master/content/docs/Application%20Developer&#39;s%20Guide/SDS/ConsenSource_DBSchema.png?raw=true&#34; alt=&#34;DB Schema&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/target/consensource-docs/blob/master/content/docs/developer/Application%20Developer&#39;s%20Guide/SDS/ConsenSource_DBSchema.png?raw=true&#34; alt=&#34;DB Schema&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The reporting DB has three types of tables: sawtooth-core tables (Blocks), domain-specific state tables (Agents, Organizations, Authorizations, Certificates, CertificateData), and application tables (tables supporting off-chain application components, such as Auth, in the schema above).
 The reporting DB should follow the &lt;a href=&#34;https://en.wikipedia.org/wiki/Slowly_changing_dimension#Type_2:_add_new_row&#34; target=&#34;_blank&#34;&gt;Type 2 of Slowly Changing Dimensions&lt;/a&gt; data management pattern, so that fork resolution is easy.&lt;/p&gt;

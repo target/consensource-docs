@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ConsenSource – Running ConsenSource Locally</title>
+    <title>ConsenSource Docs – Running ConsenSource Locally</title>
     <link>https://target.github.io/consensource-docs/docs/developer/getting-started/local/</link>
-    <description>Recent content in Running ConsenSource Locally on ConsenSource</description>
+    <description>Recent content in Running ConsenSource Locally on ConsenSource Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/getting-started/local/index.xml" rel="self" type="application/rss+xml" />

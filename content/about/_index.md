@@ -6,16 +6,21 @@ menu:
     weight: 10
 ---
 
-{{% blocks/cover title="About ConsenSource" height="auto" %}}
+{{% blocks/lead  height="auto" %}}
 
-The ConsenSource application leverages Distributed Ledger Technology (DLT)  to help brands and retailers, factories, certifying bodies and standards bodies increase transparency and efficiency around the certification process.
+# About ConsenSource
+
+<br />
+
+The ConsenSource application empowers brands and retailers, factories, certifying bodies and standards bodies to increase transparency and efficiency around the certification process.
 
 For many brands and retailers, a commom pain point in the sourcing process is the discovery and verification of the certification claims for a given factory. If a brand or retailer wishes to only do business with factories that have a given certification, where can they find a filtered list of only the factories that are certified? Furthermore, _how can they trust that the certification is valid_?
 
 In practice, each brand and retailer ends up independently verifying these claims with the ceritfying body that performed the original audit. This process is time-consuming, expensive, and error prone. 
-{{% /blocks/cover %}}
+{{% /blocks/lead %}}
 
-{{% blocks/section type="section" color="dark" %}}
+{{% blocks/section color="white" %}}
+
 # How ConsenSource Can Help
 
 <br />
@@ -33,6 +38,24 @@ Each participant in the network plays a unique role.
 
 - **Brands and Retailers** are able to view and trust the resulting data from these interactions as well as general contact and location information on each of these entities.
 {{% /blocks/section %}}
+
+{{< blocks/section color="dark" >}}
+{{% blocks/feature icon="fas fa-check-double" title="Trusted" %}}
+The data that is input to ConsenSource is immutable, and distributed amongst all parties, creating verifiable trust that all 
+inputs are authentic
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fas fa-book-open" title="Transparent" %}}
+Certification records and audit history are broadcasted and agreed upon by all members of ConsenSource
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fas fa-user-check" title="Permissioned" %}}
+The ConsenSource governing body controls permissioning of all actors in the network, 
+limiting access to only approved and relevant organizations
+{{% /blocks/feature %}}
+
+
+{{< /blocks/section >}}
 
 {{% blocks/section type="section" color="white" %}}
 ## Who Should Use ConsenSource?

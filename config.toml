@@ -1,5 +1,6 @@
 baseURL = "https://target.github.io/consensource-docs/"
 title = "ConsenSource Docs"
+description = "Certification transparency and authenticity to empower responsible sourcing"
 publishDir = "docs"
 
 enableRobotsTXT = true
@@ -51,10 +52,10 @@ anchor = "smart"
 id = "UA-00000000-0"
 
 # Top-level navigation (horizontal)
-[[menu.main]]
-    name = "ConsenSource.org"
-    weight = 1
-    url = "https://35.201.118.216"  
+# [[menu.main]]
+#     name = ""
+#     weight = 1
+#     url = ""  
 
 # Everything below this are Site Params
 [params]

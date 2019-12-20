@@ -1,6 +1,6 @@
 ---
 title: "Value Proposition"
-weight: 3
+weight: 2
 description: 
     Value delivered by adoption of the ConsenSource platform
 ---

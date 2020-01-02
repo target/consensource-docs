@@ -1,50 +1,33 @@
-# Creating and updating the ConsenSource docs
+# ConsenSource Docs Site
 
-Welcome to the GitHub repository for ConsenSource's public website. The docs are hosted at https://target.github.io/consensource-docs.
+Welcome to the GitHub repository for the ConsenSource docs site. The docs are hosted at https://target.github.io/consensource-docs.
 
 We use Hugo to format and generate our website, the Docsy theme for styling and site structure, and GitHub Pages to manage the deployment of the site. Hugo is an open-source static site generator that provides us with templates, content organization in a standard directory structure, and a website generation engine. You write the pages in Markdown, and Hugo wraps them up into a website.
 
 ## Running the docs site locally
 
-Follow the usual GitHub workflow to fork the repo on GitHub and clone it to your
-local machine, then use your local repo as input to your Hugo web server:
-
 1. **Fork** this repo
-2. Clone your fork locally. This example uses HTTPS cloning:
+2. Clone your fork and `cd` into the repo:
+   ```
+   git clone https://github.com/target/consensource-docs.git
+   cd consensource-docs/
+   ```
 
-    ```
-    mkdir consensource
-    cd consensource/
-    git clone https://github.com/target/consensource-docs.git
-    cd consensource-docs/
-    ```
-
-3. [Install Hugo](https://gohugo.io/getting-started/installing/) - e.g. `brew install hugo`. 
-4. Start your website server. Make sure you run this command from the
-   `/consensource-docs/` directory, so that Hugo can find the config files it needs:
+3. Download Hugo v0.59.1 [from the project's release page](https://github.com/gohugoio/hugo/releases/tag/v0.59.1). Move the binary to your `PATH`, e.g for a MacOS user:
+   ```
+   mv ~/Downloads/hugo_0.59.1_macOS-64bit/hugo /usr/local/bin/
+   ````
+4. Install required npm dependencies:
+   ```
+   npm i
+   ```
+5. Start the web server:
 
     ```
     hugo server -D
     ```
 
-5. You can access your website at 
-  [http://localhost:1313/](http://localhost:1313/).
-
-1. Continue with the usual GitHub workflow to edit files, commit them, push the
-  changes up to your fork, and create a pull request. (There's some help with
-  the GitHub workflow near the bottom of this page.)
-
-1. While making the changes, you can preview them on your local version of the
-  website at [http://localhost:1313/](http://localhost:1313/). Note that if you
-  have more than one local git branch, when you switch between git branches the
-  local website reflects the files in the current branch.
-
-Useful docs:
-- [User guide for the Docsy theme](https://www.docsy.dev/docs/getting-started/)
-- [Hugo installation guide](https://gohugo.io/getting-started/installing/)
-- [Hugo basic usage](https://gohugo.io/getting-started/usage/)
-- [Hugo site directory structure](https://gohugo.io/getting-started/directory-structure/)
-- [hugo server reference](https://gohugo.io/commands/hugo_server/)
+**Note**: Any Hugo version above v0.59.1 will be incompatable with the current docs site [due to the new Markdown library introduced in v0.60.0](https://gohugo.io/news/0.60.0-relnotes/).
 
 ## Updating the live docs site
 
@@ -56,7 +39,15 @@ To publish a new update to the live docs site:
 2. Open a PR to the `master` branch from your fork
 3. When that PR is merged, the docs site will automatically republish.
 
-## Menu structure
+
+### Useful resources
+- [User guide for the Docsy theme](https://www.docsy.dev/docs/getting-started/)
+- [Hugo installation guide](https://gohugo.io/getting-started/installing/)
+- [Hugo basic usage](https://gohugo.io/getting-started/usage/)
+- [Hugo site directory structure](https://gohugo.io/getting-started/directory-structure/)
+- [hugo server reference](https://gohugo.io/commands/hugo_server/)
+
+## ConsenSource Docs Site Layout
 
 ### Navbar
 The site theme has one Hugo menu (`main`), which defines the top navigation bar. 

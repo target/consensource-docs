@@ -13,9 +13,9 @@ We use Hugo to format and generate our website, the Docsy theme for styling and 
    cd consensource-docs/
    ```
 
-3. Download Hugo v0.59.1 [from the project's release page](https://github.com/gohugoio/hugo/releases/tag/v0.59.1). Move the binary to your `PATH`, e.g for a MacOS user:
+3. Download Hugo v0.67.0 extended [from the project's release page](https://github.com/gohugoio/hugo/releases/tag/v0.67.0). The extended version is required for our SCSS pre-processing. Move the binary to your `PATH`, e.g for a MacOS user:
    ```
-   mv ~/Downloads/hugo_0.59.1_macOS-64bit/hugo /usr/local/bin/
+   mv ~/Downloads/hugo_0.67.0_macOS-64bit/hugo /usr/local/bin/
    ````
 4. Install required npm dependencies:
    ```

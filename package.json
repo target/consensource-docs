@@ -21,7 +21,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.4.6",
-    "postcss-cli": "^5.0.1",
-    "minimist": "^1.2.2"
+    "kind-of": ">=6.0.3",
+    "minimist": "^1.2.2",
+    "postcss-cli": "^5.0.1"
   }
 }

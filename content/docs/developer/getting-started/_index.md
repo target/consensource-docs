@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-weight: 2
+weight: 1
 hide_feedback: true
 description: >
   How to get started running ConsenSource

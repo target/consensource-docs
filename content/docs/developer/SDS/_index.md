@@ -1,6 +1,6 @@
 ---
 title: "State Delta Subscriber"
-weight: 4
+weight: 6
 description: >
   Overview and examples of the ConsenSource State Delta Subscriber
 ---
@@ -11,7 +11,7 @@ https://github.com/target/consensource/tree/master/state_delta_subscriber
 
 The goal of State Delta Export is to provide a mechanism for exporting on-chain state values from a validator to an external data store. This allows applications to efficiently query their state values. The state delta export implements an event subscription client that subscribes to block commit events and Sawtooth state delta at specific addresses (in this case we will subscribe to all state delta events at the Certificate Registry namespace). Sawtooth sends these events whenever the validator’s state is updated. The events contain the raw state data at the updated addresses. The event subscription client processes the event data and uses it to update the reporting database, an off-chain copy of blockchain state. The REST API can query this database when a client needs to get information from the blockchain.
 
-This off-chain state access comes at the expense of relying on a single validator for state updates, this puts the application at risk of having stale data or forked state if the validator supplying the state updates comes out of consensus or is disconnected from the network. Below are guidelines on how to structure the reporting DB so fork resolution is easy.  
+This off-chain state access comes at the expense of relying on a single validator for state updates, this puts the application at risk of having stale data or forked state if the validator supplying the state updates comes out of consensus or is disconnected from the network. Below are guidelines on how to structure the reporting DB so fork resolution is easy.
 
 ## Reporting Database Structure
 
@@ -30,9 +30,9 @@ The following pseudocode demonstrates the fork resolution process:
 
 ```
 resolve_fork(existing_block):
-  for table in domain_tables:						
+  for table in domain_tables:
     delete from table where start_block_num >= existing_block.block_num
-    update table set end_block_num = MAX_UINT_64 \					
+    update table set end_block_num = MAX_UINT_64 \
       where end_block_num >= existing_block.block_num
   delete from block where block_num >= existing_block.block_num
 ```

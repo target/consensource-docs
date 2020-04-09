@@ -1,7 +1,7 @@
 ---
 title: "REST API"
 linkTitle: "API"
-weight: 2
+weight: 4
 description: >
   Overview and examples of the ConsenSource REST API
 ---

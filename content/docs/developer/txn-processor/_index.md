@@ -1,6 +1,6 @@
 ---
 title: "Transaction Processor & Families"
-weight: 5
+weight: 7
 description: >
   Overview and examples of the ConsenSource Transaction Processor and Transaction Families
 ---
@@ -21,23 +21,24 @@ CR data is stored in state using addresses generated from the CR Transaction
 family name and the object type being stored. In particular, a
 CR address consists of 4 parts creating a 70 hex character string.
 
-* The first 6 characters of the SHA-256 hash of the UTF-8 encoding of the string "certificate_registry" (`439a56`).
+- The first 6 characters of the SHA-256 hash of the UTF-8 encoding of the string "certificate_registry" (`439a56`).
 
-* The next 2 characters reserve a namespace and we will start with the namespace `00`.
+- The next 2 characters reserve a namespace and we will start with the namespace `00`.
 
-* The next 2 characters are determined by the object type.
-  * `00` will signify an *agent* object.
-  * `01` will signify a *certificate* object.
-  * `02` will signify an *organization* object.
-  * `03` will signify a *standard* object.
-  * `04` will signify a *request* object.
+- The next 2 characters are determined by the object type.
 
-* The final 60 characters is a truncated value of the SHA-256 hash of the UTF-8 encoding of:
-  * The public key string of the agent creating the object (first 60 chars of the hash) for an *agent* object.
-  * The certificate id for a *certificate* object.
-  * The organization id for an *organization* object.
-  * The standard id for a *standard* object.
-  * The request id for a *request* object.
+  - `00` will signify an _agent_ object.
+  - `01` will signify a _certificate_ object.
+  - `02` will signify an _organization_ object.
+  - `03` will signify a _standard_ object.
+  - `04` will signify a _request_ object.
+
+- The final 60 characters is a truncated value of the SHA-256 hash of the UTF-8 encoding of:
+  - The public key string of the agent creating the object (first 60 chars of the hash) for an _agent_ object.
+  - The certificate id for a _certificate_ object.
+  - The organization id for an _organization_ object.
+  - The standard id for a _standard_ object.
+  - The request id for a _request_ object.
 
 For example, the CR address for the creation of an agent object would look like the following:
 `439a560000DFB4D55EE01720E8F098CA4F5063C67BDEA82732113C9D41B3F345B1EAFA`
@@ -49,6 +50,7 @@ For example, the CR address for the creation of an agent object would look like 
 A CR Agent state entry is required to consist of the following protobuf message:
 
 [agent.proto](https://github.com/target/consensource/blob/master/protos/agent.proto)
+
 ```protobuf
 message Agent {
     // Public key associated with the agent.
@@ -73,8 +75,8 @@ message AgentContainer {
 In the event of a hash collision (i.e. two or more state entries
 sharing the same address), the colliding state entries will be stored in the agent container defined in the proto file above.
 
-
 #### Organization State
+
 A CR Organization state entry is required to consist of the following protobuf message:
 
 [organization.proto](https://github.com/target/consensource/blob/master/protos/organization.proto)
@@ -193,6 +195,7 @@ In the event of a hash collision (i.e. two or more state entries
 sharing the same address), the colliding state entries will be stored in the organization container defined in the proto file above.
 
 #### Certificate State
+
 A CR Certificate state entry is required to consist of the following protobuf message:
 
 [certificate.proto](https://github.com/target/consensource/blob/master/protos/certificate.proto)
@@ -327,11 +330,12 @@ In the event of a hash collision (i.e. two or more state entries sharing the
 same address), the colliding state entries will be stored in the request
 container defined in the proto file above.
 
-
 ## Transaction Payload
+
 CR transaction request payloads are defined by the following protobuf structure:
 
 [payload.proto](https://github.com/target/consensource/blob/master/protos/payload.proto##L7-L38)
+
 ```protobuf
 message CertificateRegistryPayload{
     enum Action {
@@ -366,14 +370,15 @@ message CertificateRegistryPayload{
     AccreditCertifyingBodyAction accredit_certifying_body_action = 11;
 }
 ```
-Based on the selected type, the data field will contain the appropriate transaction data (these messages would be defined within the CertificateRegistryPayload):
 
+Based on the selected type, the data field will contain the appropriate transaction data (these messages would be defined within the CertificateRegistryPayload):
 
 ### CreateAgentAction transaction
 
 The CreateAgentAction transaction creates an agent object that is able to sign transactions and perform actions on the behalf of their associated organization. This agent object will be initialized with no associated organization ID.
 
 [CreateAgentAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L40-L47)
+
 ```protobuf
 message CreateAgentAction {
     // A name identifying the agent.
@@ -384,16 +389,18 @@ message CreateAgentAction {
     uint64 timestamp = 2;
 }
 ```
-This transaction is considered invalid if one of the following occurs:
- - Name is not provided
- - Signing public key already associated with an agent
 
+This transaction is considered invalid if one of the following occurs:
+
+- Name is not provided
+- Signing public key already associated with an agent
 
 ### CreateOrganizationAction transaction
 
 The CreateOrganizationAction transaction creates an organization object. An organization may either be an STANDARDS_BODY, CERTIFYING_BODY or a FACTORY depending on the actions the organization will perform, such as creating standards, issuing or requesting certificates. These actions are performed by authorized agents associated with the organization. The organization object created will be initialized with the agent that signed the transaction as an ADMIN within the organization's authorizations list.
 
 [CreateOrganizationAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L49-L64)
+
 ```protobuf
 message CreateOrganizationAction {
     // UUID of the organization.
@@ -412,20 +419,22 @@ message CreateOrganizationAction {
     Factory.Address address = 5;
 }
 ```
-This transaction will be considered invalid if one of the following occurs:
- - Organization ID, name, and/or organization type are not provided
- - Organization ID already exists
- - Signing public key is not associated with a valid Agent object
- - Agent submitting the transaction already has an associated organization
- - Address is provided if the type is Standards Body or Certifying Body
- - Address is not provided if the type is Factory
 
+This transaction will be considered invalid if one of the following occurs:
+
+- Organization ID, name, and/or organization type are not provided
+- Organization ID already exists
+- Signing public key is not associated with a valid Agent object
+- Agent submitting the transaction already has an associated organization
+- Address is provided if the type is Standards Body or Certifying Body
+- Address is not provided if the type is Factory
 
 ### UpdateOrganizationAction transaction
 
 The UpdateOrganizationAction transaction modifies the value of an Organization in state. Both the address (for factories) and the contact information may be updated. The values provided will be applied exactly as submitted with the transaction. If one or the other should stay the same, the original values should be supplied.
 
 [UpdateOrganizationAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L66-L72)
+
 ```protobuf
 message UpdateOrganizationAction {
     // Updated contact info.
@@ -435,17 +444,19 @@ message UpdateOrganizationAction {
     Factory.Address address = 2;
 }
 ```
-This transaction is considered invalid if one of the following occurs:
- - The signer of the transaction is not listed as an admin of their organization
- - Provided contacts or address objects are not fully filled out
- - Address is provided if the organization is not a factory
 
+This transaction is considered invalid if one of the following occurs:
+
+- The signer of the transaction is not listed as an admin of their organization
+- Provided contacts or address objects are not fully filled out
+- Address is provided if the organization is not a factory
 
 ### AuthorizeAgentAction transaction
 
 The AuthorizeAgentAction transaction creates an entry within an organization's authorizations list for the specified public key with the specified role. This action may only be performed by an agent authorized as an ADMIN by their associated organization.
 
 [AuthorizeAgentAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L74-L83)
+
 ```protobuf
 message AuthorizeAgentAction {
     // Public key associated with the agent.
@@ -458,21 +469,23 @@ message AuthorizeAgentAction {
     Organization.Authorization.Role role = 2;
 }
 ```
-This transaction is considered invalid if one of the following occurs:
- - Public key is not provided
- - Role is not provided
- - Signing public key is not associated an Agent
- - Public key provided is not associated an Agent
- - Agent submitting the transaction is not authorized as an ADMIN within their associated organization
- - Public key provided specifies an Agent already associated with an organization
- - Invalid authorization role is provided
 
+This transaction is considered invalid if one of the following occurs:
+
+- Public key is not provided
+- Role is not provided
+- Signing public key is not associated an Agent
+- Public key provided is not associated an Agent
+- Agent submitting the transaction is not authorized as an ADMIN within their associated organization
+- Public key provided specifies an Agent already associated with an organization
+- Invalid authorization role is provided
 
 ### IssueCertificateAction transaction
 
 The IssueCertificateAction transaction creates a certificate object that contains information pertaining to the specified factory and their adherence to certain policies. A Certificate object is created by an agent associated with a certifying body.
 
 [IssueCertificateAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L85-L121)
+
 ```protobuf
 message IssueCertificateAction {
     enum Source {
@@ -512,23 +525,25 @@ message IssueCertificateAction {
     uint64 valid_to = 8;
 }
 ```
-This transaction is considered invalid if one of the following occurs:
- - ID, factory ID, standard name, valid from timestamp and/or valid to timestamp are not provided
- - Certificate ID is already associated with a Certificate object
- - Factory ID does not reference a valid factory
- - Signing public key is not associated with an agent
- - Agent submitting the transaction is not associated with a certifying body
- - Certifying Body associated with the issuing agent is not accredited to issue the standard
- - Agent submitting the transaction is not an authorized TRANSACTOR within their associated organization
- - Standard name is not associated with an existing standard
- - Invalid dates are provided, pertaining to current date as well as format
 
+This transaction is considered invalid if one of the following occurs:
+
+- ID, factory ID, standard name, valid from timestamp and/or valid to timestamp are not provided
+- Certificate ID is already associated with a Certificate object
+- Factory ID does not reference a valid factory
+- Signing public key is not associated with an agent
+- Agent submitting the transaction is not associated with a certifying body
+- Certifying Body associated with the issuing agent is not accredited to issue the standard
+- Agent submitting the transaction is not an authorized TRANSACTOR within their associated organization
+- Standard name is not associated with an existing standard
+- Invalid dates are provided, pertaining to current date as well as format
 
 ### CreateStandardAction transaction
 
 The CreateStandardAction transaction creates a new certification standard in state. It will also create a StandardVersion sub-object, which contains details specific to the version of the standard which was supplied. A CreateStandardAction transaction is submitted by an agent associated with a standards body.
 
 [CreateStandardAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L143-162)
+
 ```protobuf
 message CreateStandardAction {
     // Sha256 of the standard name
@@ -551,18 +566,20 @@ message CreateStandardAction {
 
 }
 ```
-This transaction is considered invalid if one of the following occurs:
- - The standard_id, name, version, description, link, or approval date are not provided
- - The standard_id is already associated with an existing standard
- - The signer is not associated with a standards body
- - The signer is not authorized as a transactor within their organization
 
+This transaction is considered invalid if one of the following occurs:
+
+- The standard_id, name, version, description, link, or approval date are not provided
+- The standard_id is already associated with an existing standard
+- The signer is not associated with a standards body
+- The signer is not authorized as a transactor within their organization
 
 ### UpdateStandardAction transaction
 
 The UpdateStandardAction transaction creates a new standard version in state, under the associated standard object. An UpdateStandardAction transaction is submitted by an agent associated with a standards body.
 
 [UpdateStandardAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L164-L179)
+
 ```protobuf
 message UpdateStandardAction {
     // Standard that is being updated.
@@ -581,21 +598,22 @@ message UpdateStandardAction {
     uint64 approval_date = 5;
 }
 ```
+
 This transaction is considered invalid if one of the following occurs:
- - The standard_id, version, description, link, or approval date are not provided
- - The standard_id is not associated with an existing standard
- - The version is already associated with an existing standard version
- - The signer is not associated with a standards body
- - The signer is not authorized as a transactor within their organization
- - The standard is not associated with the signer's organization
 
-
+- The standard_id, version, description, link, or approval date are not provided
+- The standard_id is not associated with an existing standard
+- The version is already associated with an existing standard version
+- The signer is not associated with a standards body
+- The signer is not authorized as a transactor within their organization
+- The standard is not associated with the signer's organization
 
 ### AccreditCertifyingBodyAction transaction
 
 The AccreditCertifyingBodyAction transaction adds an accreditation to a certifying body. An UpdateStandardAction transaction is submitted by an agent associated with a standards body.
 
 [AccreditCertifyingBodyAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L181-L195)
+
 ```protobuf
 message AccreditCertifyingBodyAction {
     // UUID of the certifying body that is being accredited.
@@ -613,19 +631,21 @@ message AccreditCertifyingBodyAction {
     uint64 valid_to = 4;
 }
 ```
-This transaction is considered invalid if one of the following occurs:
- - The signer is not associated with a standards body
- - The signer is not authorized as a transactor within their organization
- - The certifying body ID is not associated with a certifying body
- - The name is not associated with an existing standard
- - Invalid dates are provided, pertaining to current date as well as format
 
+This transaction is considered invalid if one of the following occurs:
+
+- The signer is not associated with a standards body
+- The signer is not authorized as a transactor within their organization
+- The certifying body ID is not associated with a certifying body
+- The name is not associated with an existing standard
+- Invalid dates are provided, pertaining to current date as well as format
 
 ### OpenRequestAction transaction
 
 The OpenRequestAction transaction opens a request for certification for a factory. This transaction is submitted by an agent associated with a factory and authorized as a TRANSACTOR for their associated factory.
 
 [OpenRequestAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L123-133)
+
 ```protobuf
 message OpenRequestAction {
     // UUID of the request
@@ -642,18 +662,21 @@ message OpenRequestAction {
     uint64 request_date = 4;
 }
 ```
+
 This transaction is considered invalid if one of the following occurs:
+
 - The signer is not associated with a factory
 - The signer is not authorized as a transactor within their organization
 - The id is not unique
 - The standards name is not associated with a valid standard
 - If any of these fields are empty
 
-
 ### ChangeRequestStatusAction transaction
+
 The ChangeRequestStatusAction transaction is performed when a factory's certification request status is changed, such as to CLOSED, IN_PROGRESS, or CERTIFIED. This transaction results from either a factory changing the status to CLOSED or IN_PROGRESS, which would be submitted by an agent associated with the factory and authorized as a TRANSACTOR.
 
 [ChangeRequestStatusAction protobuf](https://github.com/target/consensource/blob/master/protos/payload.proto##L135-141)
+
 ```protobuf
 message ChangeRequestStatusAction {
     // Request for which the status is being changed.
@@ -663,20 +686,21 @@ message ChangeRequestStatusAction {
     Request.Status status = 2;
 }
 ```
+
 This transaction is considered invalid if one of the following occurs:
+
 - The signer is not associated with a factory
 - The signer is not authorized as a transactor within their organization
 - A request with the provided id does not exist
 - The status is not a valid status enum: IN_PROGRESS or CLOSED
 - The status is already CLOSED or CERTIFIED
 
-
 ## Transaction Header
 
 ### Family
 
-* family_name: "certificate_registry"
-* family_version: "0.1"
+- family_name: "certificate_registry"
+- family_version: "0.1"
 
 ### Inputs and Outputs
 
@@ -688,100 +712,99 @@ Outputs are the address(es) of all the state objects modified by the transaction
 
 Inputs:
 
- - Address of the Agent to be created
+- Address of the Agent to be created
 
 Outputs:
 
- - Address of the Agent created
+- Address of the Agent created
 
 #### CreateOrganizationAction Transaction
 
 Inputs:
 
- - Address of the Agent submitting the transaction
+- Address of the Agent submitting the transaction
 
- - Address of the Organization to be created
+- Address of the Organization to be created
 
 Outputs:
 
- - Address of the Agent that submitted the transaction
+- Address of the Agent that submitted the transaction
 
- - Address of the Organization created
+- Address of the Organization created
 
 ### AuthorizeAgent Transaction
 
 Inputs:
 
- - Address of the Agent submitting the transaction
+- Address of the Agent submitting the transaction
 
- - Address of the Organization with the authorization list being modified
+- Address of the Organization with the authorization list being modified
 
- - Address of the Agent to be added to the Organization's authorization list
+- Address of the Agent to be added to the Organization's authorization list
 
 Outputs:
 
- - Address of the Organization with a modified authorization list
+- Address of the Organization with a modified authorization list
 
- - Address of the Agent added to the authorization list
+- Address of the Agent added to the authorization list
 
 ### IssueCertificateAction Transaction
 
 Inputs:
 
- - Address of the Agent submitting the transaction
+- Address of the Agent submitting the transaction
 
- - Address of the Organization the certificate is being submitted on behalf of
+- Address of the Organization the certificate is being submitted on behalf of
 
- - Address of the Certificate to be created
+- Address of the Certificate to be created
 
- - Address of the Standard the certificate is being created against
+- Address of the Standard the certificate is being created against
 
 Outputs:
 
- - Address of the Certificate created
+- Address of the Certificate created
 
 ### CreateStandardAction Transaction
 
 Inputs:
 
- - Address of the Agent submitting the transaction
+- Address of the Agent submitting the transaction
 
- - Address of the Standard that is being created
+- Address of the Standard that is being created
 
- - Address of the Organization the Standard is being created on behalf of
+- Address of the Organization the Standard is being created on behalf of
 
 Outputs:
 
- - Address of the Standard that is being created
+- Address of the Standard that is being created
 
- - Address of the Organization the Standard is being created on behalf of
+- Address of the Organization the Standard is being created on behalf of
 
 ### UpdateStandardAction Transaction
 
 Inputs:
 
- - Address of the Agent submitting the transaction
+- Address of the Agent submitting the transaction
 
- - Address of the Standard that is being created
+- Address of the Standard that is being created
 
- - Address of the Organization the Standard is being created on behalf of
+- Address of the Organization the Standard is being created on behalf of
 
 Outputs:
 
- - Address of the Standard that is being created
-
+- Address of the Standard that is being created
 
 ### AccreditCertifyingBodyAction Transaction
 
 Inputs:
 
- - Address of the Agent submitting the transaction
+- Address of the Agent submitting the transaction
 
- - Address of the Standard that is being accredited for
+- Address of the Standard that is being accredited for
 
- - Address of the Organization that the transaction is being submitted on behalf of
+- Address of the Organization that the transaction is being submitted on behalf of
 
- - Address of the Organization that is being accredited
+- Address of the Organization that is being accredited
 
 Outputs:
 
@@ -791,27 +814,27 @@ Outputs:
 
 Inputs:
 
- - Address of the Request to be created
+- Address of the Request to be created
 
- - Address of the Organization the Request is being made for
+- Address of the Organization the Request is being made for
 
- - Address of the Standard the Request is being made for
+- Address of the Standard the Request is being made for
 
 Outputs:
 
- - Address of the Request to be created
+- Address of the Request to be created
 
 ### ChangeRequestStatusAction Transaction
 
 Inputs:
 
- - Address of the Request to be updated
+- Address of the Request to be updated
 
- - Address of the Organization the Request is being made for
+- Address of the Organization the Request is being made for
 
 Outputs:
 
- - Address of the Request to be updated
+- Address of the Request to be updated
 
 ## Execution
 
@@ -837,7 +860,6 @@ A successful OpenRequestAction transaction will result in a new Request object i
 
 A successful ChangeRequestStatusAction transaction will result in an updated Request object in state with the status of provided.
 This Request will be submitted on behalf of a Factory.
-
 
 .. Licensed under Creative Commons Attribution 4.0 International License
 .. https://creativecommons.org/licenses/by/4.0/

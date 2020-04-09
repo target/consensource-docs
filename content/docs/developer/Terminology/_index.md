@@ -1,8 +1,6 @@
 ---
 title: "Terminology"
-weight: 5
+weight: 3
 description: >
   A glossary of common terminology in ConsenSource
 ---
-
-

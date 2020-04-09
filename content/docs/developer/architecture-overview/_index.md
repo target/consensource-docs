@@ -1,6 +1,6 @@
 ---
 title: "Architecture Overview"
-weight: 1
+weight: 2
 description: >
   Overview of the ConsenSource application architecture
 ---

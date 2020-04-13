@@ -1,0 +1,197 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConsenSource Docs – User Interface</title>
+    <link>https://target.github.io/consensource-docs/docs/developer/ui/</link>
+    <description>Recent content in User Interface on ConsenSource Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://target.github.io/consensource-docs/docs/developer/ui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: User Personas</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Key Management</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/ui/key-mgmt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/ui/key-mgmt/</guid>
+      <description>
+        
+        
+        
+
+&lt;h3 id=&#34;private-public-key-overview&#34;&gt;Private &amp;amp; Public Key Overview&lt;/h3&gt;
+
+&lt;p&gt;ConsenSource utilizes &lt;a href=&#34;https://www.blockchain-council.org/blockchain/how-does-blockchain-use-public-key-cryptography/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;public-key cryptography&lt;/em&gt;&lt;/a&gt;. Public keys are stored &lt;em&gt;on-chain&lt;/em&gt; and accessible to all nodes in the network, and a user&amp;rsquo;s private key is stored in an encrypted format &lt;em&gt;off-chain&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Whenever a user creates a transaction, the contents of the payload are serialized, signed with the user&amp;rsquo;s private key, and committed with the transaction. This signature can later be decrypted with the user&amp;rsquo;s public key to verify that the contents of the payload are unchanged, and to prove that a given user created a transaction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Private and Public keys&lt;/strong&gt; in ConsenSource are generated with &lt;a href=&#34;http://www.secg.org/sec2-v2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;secp256k1&lt;/strong&gt; using the &lt;strong&gt;ECDSA&lt;/strong&gt; algorithm&lt;/a&gt;. When storing private keys in a database, the &lt;a href=&#34;https://bitwiseshiftleft.github.io/sjcl/&#34; target=&#34;_blank&#34;&gt;SJCL encyrption library&lt;/a&gt; is used.&lt;/p&gt;
+
+&lt;h4 id=&#34;sawtooth-docs&#34;&gt;Sawtooth Docs&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys&#34; target=&#34;_blank&#34;&gt;Creating Private and Public Keys&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;key-management&#34;&gt;Key Management&lt;/h3&gt;
+
+&lt;h4 id=&#34;browser-storage&#34;&gt;Browser Storage&lt;/h4&gt;
+
+&lt;p&gt;Browser storage is used to store the public and private keys of a user.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Local Storage&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Stores a User object containing the following fields
+
+&lt;ul&gt;
+&lt;li&gt;username, public_key, name, email, encrypted_private_key&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Session Storage&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Stores the &lt;em&gt;decrypted&lt;/em&gt; private key&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;user-creation&#34;&gt;User Creation&lt;/h4&gt;
+
+&lt;p&gt;When filling out the Sign Up form, a User object is created along with a corresponding Agent in order to store the hashed password and encrypted private key. The Agent is stored &lt;em&gt;on-chain&lt;/em&gt;, but the User is stored &lt;em&gt;off-chain&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The User is fetched from the database when signing in to ConsenSource. The User object is then saved to &lt;em&gt;local storage&lt;/em&gt;, and the decrypted private key is saved to &lt;em&gt;session storage&lt;/em&gt;.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+&lt;b&gt;Takeaway&lt;/b&gt;&lt;br/&gt;
+A &lt;em&gt;User&lt;/em&gt; is an off-chain object that is used to store the hashed password and encrypted private key of a user.
+&lt;/div&gt;
+
+
+&lt;p&gt;The diagram below goes into more detail on the user creation process.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 2110px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://target.github.io/consensource-docs/consensource-docs/docs/developer/ui/key-mgmt/user-creation_hu9ec848a8d82135337be889548452ce0a_196612_2100x1200_fill_catmullrom_smart1_2.png&#34; width=&#34;2100&#34; height=&#34;1200&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+User creation workflow in ConsenSource
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Transaction &amp; Batch Building</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/ui/txns-batches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/ui/txns-batches/</guid>
+      <description>
+        
+        
+        
+
+&lt;h3 id=&#34;transactions-batches-in-sawtooth&#34;&gt;Transactions &amp;amp; Batches In Sawtooth&lt;/h3&gt;
+
+&lt;p&gt;In Hyperledger Sawtooth, the state of the blockchain can only be modified through &lt;strong&gt;transactions&lt;/strong&gt;. As a user interacts with the application, transactions are constructed. The contents of a transaction are signed with the user&amp;rsquo;s &lt;em&gt;private key&lt;/em&gt; in an irreversible, one-way hashing function (&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys&#34; target=&#34;_blank&#34;&gt;secp256k1 ECDSA&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The resulting signature can be decoded with the user&amp;rsquo;s &lt;em&gt;public key&lt;/em&gt;. This decoding process is used to verify that a transaction was not modified after being signed by the user.&lt;/p&gt;
+
+&lt;p&gt;Transactions are then wrapped into a &lt;strong&gt;batch&lt;/strong&gt;. Batches are the atomic unit of change in Sawtooth - either all of the transactions in a batch are committed together, or the entire batch is rejected. A batch is sent from the UI to the API, which is then forwarded to a Sawtooth validator node that verifies the signature and payload of each transaction before updating the blockchain state.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+&lt;b&gt;Takeaway&lt;/b&gt;&lt;br/&gt;
+The state of the ConsenSource blockchain is updated by &lt;em&gt;transactions&lt;/em&gt; wrapped in a &lt;em&gt;batch&lt;/em&gt; that get sent to a validator node. The UI constructs and signs transactions on behalf of a user.
+&lt;/div&gt;
+
+
+&lt;p&gt;The diagram below provides an overview of the sturcture of transactions and batches in Sawtooth.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 510px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://target.github.io/consensource-docs/consensource-docs/docs/developer/ui/txns-batches/txn-batch-overview_hud76307d776b7119f4f67952d1106fbd2_130133_500x400_fill_catmullrom_smart1_2.png&#34; width=&#34;500&#34; height=&#34;400&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Transaction and Batch relationship
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+&lt;h3 id=&#34;building-and-submitting-transactions&#34;&gt;Building and Submitting Transactions&lt;/h3&gt;
+
+&lt;h4 id=&#34;transaction-family&#34;&gt;Transaction Family&lt;/h4&gt;
+
+&lt;p&gt;The ConsenSource Transaction Family is designed to model the existing business processes that occur when a factory receives a new certification. View the full specification at the link below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://target.github.io/consensource-docs/consensource-docs/docs/developer/txn-processor/&#34;&gt;Transaction Processor &amp;amp; Family Documentation&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;signing-transactions&#34;&gt;Signing Transactions&lt;/h4&gt;
+
+&lt;h3 id=&#34;additional-sawtooth-docs&#34;&gt;Additional Sawtooth Docs&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/transactions_and_batches.html#transactions-and-batches&#34; target=&#34;_blank&#34;&gt;Transactions and Batches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.0/app_developers_guide/address_and_namespace.html#address-and-namespace-design&#34; target=&#34;_blank&#34;&gt;Addressing &amp;amp; Namespace Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/nightly/1-1/_autogen/txn_submit_tutorial.html#building-and-submitting-transactions&#34; target=&#34;_blank&#34;&gt;Building and Submitting Transactions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Block Watcher</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/ui/block-watcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/ui/block-watcher/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

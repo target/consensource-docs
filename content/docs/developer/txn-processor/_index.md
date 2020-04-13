@@ -1,12 +1,10 @@
 ---
-title: "Transaction Processor & Families"
+title: "Transaction Processor & Family"
 weight: 7
-description: >
-  Overview and examples of the ConsenSource Transaction Processor and Transaction Families
 ---
 
-{{< alert title="GitHub Link">}}
-https://github.com/target/consensource/tree/master/processor
+{{< alert>}}
+[View the ConsenSource Transaction Processor on Github](https://github.com/target/consensource-processor/tree/master)
 {{< /alert >}}
 
 ConsenSource is a certificate registry, as data pertaining to the process of factory certification is captured in the ledger state. This Certificate Registry (henceforth referred to as CR) Transaction family displays the interactions currently implemented for any participant that affects state data. Furthermore, this lays out the logic behind all interactions to verify the data submitted to the ledger.

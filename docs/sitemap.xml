@@ -3,53 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/architecture-overview/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/cli/cli/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://target.github.io/consensource-docs/docs/business/context-problem-statement/</loc>
     <lastmod>2019-12-17T11:39:50-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/local/mac/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/</loc>
+    <lastmod>2020-04-09T14:45:58-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/retailer/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/local/mac/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/retailer/</loc>
   </url>
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/local/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/api/rest-api/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/</loc>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/factory/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/architecture-overview/</loc>
+    <lastmod>2020-04-09T14:45:58-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/factory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/key-mgmt/</loc>
   </url>
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/gcp/gcp/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
   </url>
   
   <url>
@@ -59,12 +52,10 @@
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/local/windows/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/certifying-body/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/cert-body/</loc>
   </url>
   
   <url>
@@ -74,47 +65,47 @@
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/getting-started/local/linux/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/</loc>
-    <lastmod>2019-12-16T14:41:28-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/client/standards-body/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/sds/state-delta-subscriber/</loc>
-    <lastmod>2019-12-16T14:41:28-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/terminology/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/application-developers-guide/tp/transaction-processor-and-famlies/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/txns-batches/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/block-watcher/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/user-personas/standards-body/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/cli/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/sds/</loc>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/txn-processor/</loc>
+    <lastmod>2020-04-09T14:45:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://target.github.io/consensource-docs/docs/developer/ui/</loc>
   </url>
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/troubleshooting/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/community/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
   </url>
   
   <url>
@@ -124,11 +115,6 @@
   
   <url>
     <loc>https://target.github.io/consensource-docs/docs/developer/</loc>
-    <lastmod>2019-12-12T14:14:27-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://target.github.io/consensource-docs/docs/developer/parameter-reference/</loc>
     <lastmod>2019-12-12T14:14:27-06:00</lastmod>
   </url>
   

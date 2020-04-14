@@ -3,7 +3,7 @@ title: "Terminology"
 weight: 3
 ---
 
-Below is a list of common terminology / acronyms used in ConsenSource.
+<!-- Below is a list of common terminology / acronyms used in ConsenSource.
 
 ### Terminology
 
@@ -15,4 +15,4 @@ Below is a list of common terminology / acronyms used in ConsenSource.
 
 ##### - **SDS**: State Delta Subscriber
 
-##### - **Protos/Protobufs**: Protocol Buffers
+##### - **Protos/Protobufs**: Protocol Buffers -->

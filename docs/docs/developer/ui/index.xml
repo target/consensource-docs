@@ -167,7 +167,7 @@ Transaction and Batch relationship
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://target.github.io/consensource-docs/consensource-docs/docs/developer/txn-processor/&#34;&gt;Transaction Processor &amp;amp; Family Documentation&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;signing-transactions&#34;&gt;Signing Transactions&lt;/h4&gt;
+&lt;!-- #### Signing Transactions --&gt;
 
 &lt;h3 id=&#34;additional-sawtooth-docs&#34;&gt;Additional Sawtooth Docs&lt;/h3&gt;
 
@@ -177,32 +177,6 @@ Transaction and Batch relationship
 &lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/nightly/1-1/_autogen/txn_submit_tutorial.html#building-and-submitting-transactions&#34; target=&#34;_blank&#34;&gt;Building and Submitting Transactions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Block Watcher</title>
-      <link>https://target.github.io/consensource-docs/docs/developer/ui/block-watcher/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://target.github.io/consensource-docs/docs/developer/ui/block-watcher/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Protocol Buffers</title>
-      <link>https://target.github.io/consensource-docs/docs/developer/ui/protobuf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://target.github.io/consensource-docs/docs/developer/ui/protobuf/</guid>
-      <description>
-        
-        
-        
       </description>
     </item>
     

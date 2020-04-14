@@ -32,7 +32,7 @@ The ConsenSource Transaction Family is designed to model the existing business p
 
 **[Transaction Processor & Family Documentation](/consensource-docs/docs/developer/txn-processor/)**
 
-#### Signing Transactions
+<!-- #### Signing Transactions -->
 
 ### Additional Sawtooth Docs
 

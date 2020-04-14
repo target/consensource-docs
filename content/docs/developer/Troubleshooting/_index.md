@@ -1,9 +1,7 @@
 ---
 title: "Troubleshooting"
 linkTitle: "Troubleshooting"
-weight: 6
-description: >
-  Troubleshooting for common issues with ConsenSource
+weight: 9
 ---
 
 {{% pageinfo %}}

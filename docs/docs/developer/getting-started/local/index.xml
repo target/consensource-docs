@@ -50,17 +50,17 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 
 
 &lt;ol&gt;
-&lt;li&gt;Clone the &lt;a href=&#34;https://github.com/target/consensource&#34; target=&#34;_blank&#34;&gt;ConsenSource repo&lt;/a&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;https://github.com/target/consensource-compose&#34; target=&#34;_blank&#34;&gt;ConsenSource repo&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Via HTTPS: &lt;code&gt;git clone https://github.com/target/consensource.git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Via SSH: &lt;code&gt;git clone git@github.com:target/consensource.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Via HTTPS: &lt;code&gt;git clone https://github.com/target/consensource-compose.git consensource&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Via SSH: &lt;code&gt;git clone git@github.com:target/consensource-compose.git consensource&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;cd consensource&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Pull down Docker images from DockerHub
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;docker-compose pull&lt;/code&gt;(the images are quite long and will take some time to download)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker-compose pull&lt;/code&gt;(the images are quite large and will take some time to download)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Start the network
 
@@ -80,7 +80,7 @@ The ConsenSource application is comprised of a number of Docker images. To run t
 &lt;li&gt;PostgreSQL Adminer: &lt;a href=&#34;http://localhost:8081/&#34; target=&#34;_blank&#34;&gt;http://localhost:8081/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
+&lt;p&gt;You can run the following cURL command to see the contents of the &lt;a href=&#34;https://target.github.io/consensource-docs/docs/developer/terminology&#34;&gt;genesis block&lt;/a&gt; that was created on startup:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;curl -X GET http://localhost:8008/blocks
 &lt;/code&gt;&lt;/pre&gt;

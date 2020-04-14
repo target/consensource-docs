@@ -1,8 +1,18 @@
 ---
 title: "Terminology"
-weight: 5
-description: >
-  A glossary of common terminology in ConsenSource
+weight: 3
 ---
 
+Below is a list of common terminology / acronyms used in ConsenSource.
 
+### Terminology
+
+### Acronyms
+
+##### - **TP**: Transaction Processor
+
+##### - **TF**: Transaction Family
+
+##### - **SDS**: State Delta Subscriber
+
+##### - **Protos/Protobufs**: Protocol Buffers

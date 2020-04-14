@@ -11,17 +11,13 @@ ConsenSource utilizes [_public-key cryptography_](https://www.blockchain-council
 
 Whenever a user creates a transaction, the contents of the payload are serialized, signed with the user's private key, and committed with the transaction. This signature can later be decrypted with the user's public key to verify that the contents of the payload are unchanged, and to prove that a given user created a transaction.
 
-**Private and Public keys** in ConsenSource are generated with [**secp256k1** using the **ECDSA** algorithm](http://www.secg.org/sec2-v2.pdf). When storing private keys in a database, the [SJCL encyrption library](https://bitwiseshiftleft.github.io/sjcl/) is used.
-
-#### Sawtooth Docs
-
-- [Creating Private and Public Keys](https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys)
+**Private and Public keys** in ConsenSource are generated with [**secp256k1** using the **ECDSA** algorithm](http://www.secg.org/sec2-v2.pdf) using the [sawtooth-signing](https://github.com/hyperledger/sawtooth-sdk-javascript/tree/master/signing) library. When storing private keys in a database, the [SJCL encyrption library](https://bitwiseshiftleft.github.io/sjcl/) is used.
 
 ### Key Management
 
 #### Browser Storage
 
-Browser storage is used to store the public and private keys of a user.
+Browser storage is used as a temporary store for the public and private keys of a user.
 
 _Local Storage_:
 
@@ -48,3 +44,7 @@ The diagram below goes into more detail on the user creation process.
 {{< imgproc user-creation Fill "2100x1200" >}}
 User creation workflow in ConsenSource
 {{< /imgproc >}}
+
+### Additional Sawtooth Docs
+
+- [Creating Private and Public Keys](https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys)

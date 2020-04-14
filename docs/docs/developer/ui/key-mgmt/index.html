@@ -234,20 +234,19 @@ if (!doNotTrack) {
       
       
       
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/consensource-docs/docs/developer/getting-started/local/mac/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">macOS</a>
+  </li>
+  <ul>
+    <li class="collapse " id="consensource-docs-docs-developer-getting-started-local-mac">
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-consensource-docs-docs-developer-getting-started-local-mac" href="/consensource-docs/docs/developer/getting-started/local/mac/">macOS</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-consensource-docs-docs-developer-getting-started-local-windows" href="/consensource-docs/docs/developer/getting-started/local/windows/">Windows</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-consensource-docs-docs-developer-getting-started-local-linux" href="/consensource-docs/docs/developer/getting-started/local/linux/">Linux</a>
       
       
     </li>
@@ -258,8 +257,77 @@ if (!doNotTrack) {
       
       
       
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/consensource-docs/docs/developer/getting-started/local/windows/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Windows</a>
+  </li>
+  <ul>
+    <li class="collapse " id="consensource-docs-docs-developer-getting-started-local-windows">
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-consensource-docs-docs-developer-getting-started-gcp-gcp" href="/consensource-docs/docs/developer/getting-started/gcp/gcp/">Running ConsenSource In GCP</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/consensource-docs/docs/developer/getting-started/local/linux/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Linux</a>
+  </li>
+  <ul>
+    <li class="collapse " id="consensource-docs-docs-developer-getting-started-local-linux">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/consensource-docs/docs/developer/getting-started/gcp/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Running ConsenSource In GCP</a>
+  </li>
+  <ul>
+    <li class="collapse " id="consensource-docs-docs-developer-getting-started-gcp">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
     </li>
@@ -607,6 +675,29 @@ if (!doNotTrack) {
 
       
       
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/consensource-docs/docs/developer/ui/protobuf/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Protocol Buffers</a>
+  </li>
+  <ul>
+    <li class="collapse " id="consensource-docs-docs-developer-ui-protobuf">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -681,15 +772,13 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#private-public-key-overview">Private &amp; Public Key Overview</a>
-<ul>
-<li><a href="#sawtooth-docs">Sawtooth Docs</a></li>
-</ul></li>
+<li><a href="#private-public-key-overview">Private &amp; Public Key Overview</a></li>
 <li><a href="#key-management">Key Management</a>
 <ul>
 <li><a href="#browser-storage">Browser Storage</a></li>
 <li><a href="#user-creation">User Creation</a></li>
 </ul></li>
+<li><a href="#additional-sawtooth-docs">Additional Sawtooth Docs</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -755,19 +844,13 @@ if (!doNotTrack) {
 
 <p>Whenever a user creates a transaction, the contents of the payload are serialized, signed with the user&rsquo;s private key, and committed with the transaction. This signature can later be decrypted with the user&rsquo;s public key to verify that the contents of the payload are unchanged, and to prove that a given user created a transaction.</p>
 
-<p><strong>Private and Public keys</strong> in ConsenSource are generated with <a href="http://www.secg.org/sec2-v2.pdf" target="_blank"><strong>secp256k1</strong> using the <strong>ECDSA</strong> algorithm</a>. When storing private keys in a database, the <a href="https://bitwiseshiftleft.github.io/sjcl/" target="_blank">SJCL encyrption library</a> is used.</p>
-
-<h4 id="sawtooth-docs">Sawtooth Docs</h4>
-
-<ul>
-<li><a href="https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys" target="_blank">Creating Private and Public Keys</a></li>
-</ul>
+<p><strong>Private and Public keys</strong> in ConsenSource are generated with <a href="http://www.secg.org/sec2-v2.pdf" target="_blank"><strong>secp256k1</strong> using the <strong>ECDSA</strong> algorithm</a> using the <a href="https://github.com/hyperledger/sawtooth-sdk-javascript/tree/master/signing" target="_blank">sawtooth-signing</a> library. When storing private keys in a database, the <a href="https://bitwiseshiftleft.github.io/sjcl/" target="_blank">SJCL encyrption library</a> is used.</p>
 
 <h3 id="key-management">Key Management</h3>
 
 <h4 id="browser-storage">Browser Storage</h4>
 
-<p>Browser storage is used to store the public and private keys of a user.</p>
+<p>Browser storage is used as a temporary store for the public and private keys of a user.</p>
 
 <p><em>Local Storage</em>:</p>
 
@@ -820,12 +903,20 @@ User creation workflow in ConsenSource
 	
 </div>
 
+<h3 id="additional-sawtooth-docs">Additional Sawtooth Docs</h3>
+
+<ul>
+<li><a href="https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys" target="_blank">Creating Private and Public Keys</a></li>
+</ul>
+
         <div class="section-index">
     
     
     
     
     <hr class="panel-line">
+        
+            
         
             
         

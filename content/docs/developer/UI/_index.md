@@ -31,6 +31,6 @@ Each of the personas has a distinct role in the certification lifecycle, and can
 
 The organization that a user belongs to determines the set of components that they are able to interact with in the UI. For example, a Retailer/Brand is able to favorite a list of factories that they do business with, but a factory cannot favorite other factories.
 
-Read the guides below to learn more about the ConsenSource UI.
+<b>Read the guides below to learn more about the ConsenSource UI.</b>
 
-## Guides
+### ConsenSource UI Guides

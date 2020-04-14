@@ -22,7 +22,8 @@
       <description>
         
         
-        
+        &lt;p&gt;The first step to working with ConsenSource is getting it up and running. The guides below have detailed instructions on running the ConsenSource network in various environments.&lt;/p&gt;
+
       </description>
     </item>
     
@@ -65,6 +66,21 @@
         
         
         
+
+&lt;p&gt;Below is a list of common terminology / acronyms used in ConsenSource.&lt;/p&gt;
+
+&lt;h3 id=&#34;terminology&#34;&gt;Terminology&lt;/h3&gt;
+
+&lt;h3 id=&#34;acronyms&#34;&gt;Acronyms&lt;/h3&gt;
+
+&lt;h5 id=&#34;tp-transaction-processor&#34;&gt;- &lt;strong&gt;TP&lt;/strong&gt;: Transaction Processor&lt;/h5&gt;
+
+&lt;h5 id=&#34;tf-transaction-family&#34;&gt;- &lt;strong&gt;TF&lt;/strong&gt;: Transaction Family&lt;/h5&gt;
+
+&lt;h5 id=&#34;sds-state-delta-subscriber&#34;&gt;- &lt;strong&gt;SDS&lt;/strong&gt;: State Delta Subscriber&lt;/h5&gt;
+
+&lt;h5 id=&#34;protos-protobufs-protocol-buffers&#34;&gt;- &lt;strong&gt;Protos/Protobufs&lt;/strong&gt;: Protocol Buffers&lt;/h5&gt;
+
       </description>
     </item>
     
@@ -1087,9 +1103,9 @@ This Request will be submitted on behalf of a Factory.&lt;/p&gt;
 
 &lt;p&gt;The organization that a user belongs to determines the set of components that they are able to interact with in the UI. For example, a Retailer/Brand is able to favorite a list of factories that they do business with, but a factory cannot favorite other factories.&lt;/p&gt;
 
-&lt;p&gt;Read the guides below to learn more about the ConsenSource UI.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Read the guides below to learn more about the ConsenSource UI.&lt;/b&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;guides&#34;&gt;Guides&lt;/h2&gt;
+&lt;h3 id=&#34;consensource-ui-guides&#34;&gt;ConsenSource UI Guides&lt;/h3&gt;
 
       </description>
     </item>

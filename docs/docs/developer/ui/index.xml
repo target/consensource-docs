@@ -43,19 +43,13 @@
 
 &lt;p&gt;Whenever a user creates a transaction, the contents of the payload are serialized, signed with the user&amp;rsquo;s private key, and committed with the transaction. This signature can later be decrypted with the user&amp;rsquo;s public key to verify that the contents of the payload are unchanged, and to prove that a given user created a transaction.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Private and Public keys&lt;/strong&gt; in ConsenSource are generated with &lt;a href=&#34;http://www.secg.org/sec2-v2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;secp256k1&lt;/strong&gt; using the &lt;strong&gt;ECDSA&lt;/strong&gt; algorithm&lt;/a&gt;. When storing private keys in a database, the &lt;a href=&#34;https://bitwiseshiftleft.github.io/sjcl/&#34; target=&#34;_blank&#34;&gt;SJCL encyrption library&lt;/a&gt; is used.&lt;/p&gt;
-
-&lt;h4 id=&#34;sawtooth-docs&#34;&gt;Sawtooth Docs&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys&#34; target=&#34;_blank&#34;&gt;Creating Private and Public Keys&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Private and Public keys&lt;/strong&gt; in ConsenSource are generated with &lt;a href=&#34;http://www.secg.org/sec2-v2.pdf&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;secp256k1&lt;/strong&gt; using the &lt;strong&gt;ECDSA&lt;/strong&gt; algorithm&lt;/a&gt; using the &lt;a href=&#34;https://github.com/hyperledger/sawtooth-sdk-javascript/tree/master/signing&#34; target=&#34;_blank&#34;&gt;sawtooth-signing&lt;/a&gt; library. When storing private keys in a database, the &lt;a href=&#34;https://bitwiseshiftleft.github.io/sjcl/&#34; target=&#34;_blank&#34;&gt;SJCL encyrption library&lt;/a&gt; is used.&lt;/p&gt;
 
 &lt;h3 id=&#34;key-management&#34;&gt;Key Management&lt;/h3&gt;
 
 &lt;h4 id=&#34;browser-storage&#34;&gt;Browser Storage&lt;/h4&gt;
 
-&lt;p&gt;Browser storage is used to store the public and private keys of a user.&lt;/p&gt;
+&lt;p&gt;Browser storage is used as a temporary store for the public and private keys of a user.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Local Storage&lt;/em&gt;:&lt;/p&gt;
 
@@ -107,6 +101,12 @@ User creation workflow in ConsenSource
 	&lt;/div&gt;
 	
 &lt;/div&gt;
+
+&lt;h3 id=&#34;additional-sawtooth-docs&#34;&gt;Additional Sawtooth Docs&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sawtooth.hyperledger.org/docs/core/releases/1.0/_autogen/txn_submit_tutorial.html?highlight=secp256k1#creating-private-and-public-keys&#34; target=&#34;_blank&#34;&gt;Creating Private and Public Keys&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -186,6 +186,19 @@ Transaction and Batch relationship
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://target.github.io/consensource-docs/docs/developer/ui/block-watcher/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Protocol Buffers</title>
+      <link>https://target.github.io/consensource-docs/docs/developer/ui/protobuf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://target.github.io/consensource-docs/docs/developer/ui/protobuf/</guid>
       <description>
         
         

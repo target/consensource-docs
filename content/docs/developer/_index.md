@@ -13,4 +13,6 @@ making it easier to find and verify the certifications and audit histories of a 
 
 This section is intended to help software developers better understand how ConsenSource works, and how they can contribute to the project.
 
-If you are interested in learning more about the business value of ConsenSource, you can read the [Business Documentation](/docs/business)
+If you are interested in learning more about the business value of ConsenSource, you can read the [Business Documentation](/docs/business).
+
+### ConsenSource Guides

@@ -850,9 +850,13 @@ if (!doNotTrack) {
 
 <p>Tables that include state data have additional columns of <em>start_block_num</em> and <em>end_block_num</em>. The ​start_block_num​ and ​end_block_num​ columns specify the block range in which that state value is set or exists. Values that are valid as of the current block have ​end_block_num​ set to <code>MAX_UINT_64</code>.</p>
 
-<blockquote>
-<p>A state value is considered valid if the <code>end_block_num</code> is greater than or equal to the current block.</p>
-</blockquote>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Takeaway</h4>
+A state value is considered valid if the <code>end_block_num</code> is greater than or equal to the current block.
+</div>
+
 
 <h3 id="primary-keys">Primary Keys</h3>
 
@@ -996,7 +1000,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 13, 2020: <a  href="https://github.com/target/consensource-docs/commit/7ec9bb5ed1394339f74e69dd3afc9a942a490d3c">Add additional UI docs (7ec9bb5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 19, 2020: <a  href="https://github.com/target/consensource-docs/commit/ea46c9923dc3eb2fd12d1b94876037676312e187">Update SDS docs (ea46c99)</a>
 </div>
 </div>
 

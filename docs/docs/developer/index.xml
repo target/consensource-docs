@@ -204,9 +204,13 @@
 
 &lt;p&gt;Tables that include state data have additional columns of &lt;em&gt;start_block_num&lt;/em&gt; and &lt;em&gt;end_block_num&lt;/em&gt;. The ​start_block_num​ and ​end_block_num​ columns specify the block range in which that state value is set or exists. Values that are valid as of the current block have ​end_block_num​ set to &lt;code&gt;MAX_UINT_64&lt;/code&gt;.&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;A state value is considered valid if the &lt;code&gt;end_block_num&lt;/code&gt; is greater than or equal to the current block.&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Takeaway&lt;/h4&gt;
+A state value is considered valid if the &lt;code&gt;end_block_num&lt;/code&gt; is greater than or equal to the current block.
+&lt;/div&gt;
+
 
 &lt;h3 id=&#34;primary-keys&#34;&gt;Primary Keys&lt;/h3&gt;
 

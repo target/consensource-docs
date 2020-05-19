@@ -55,7 +55,9 @@ In a blockchain there is no way to "delete" information. To indicate that a valu
 
 Tables that include state data have additional columns of *start_block_num* and *end_block_num*. The ​start_block_num​ and ​end_block_num​ columns specify the block range in which that state value is set or exists. Values that are valid as of the current block have ​end_block_num​ set to `MAX_UINT_64`.
 
-> A state value is considered valid if the `end_block_num` is greater than or equal to the current block. 
+{{< alert title="Takeaway">}}
+A state value is considered valid if the `end_block_num` is greater than or equal to the current block. 
+{{< /alert >}}
 
 ### Primary Keys
 

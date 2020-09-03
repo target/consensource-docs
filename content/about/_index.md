@@ -14,9 +14,9 @@ menu:
 
 The ConsenSource application empowers brands and retailers, factories, certifying bodies and standards bodies to increase transparency and efficiency around the certification process.
 
-For many brands and retailers, a commom pain point in the sourcing process is the discovery and verification of the certification claims for a given factory. If a brand or retailer wishes to only do business with factories that have a given certification, where can they find a filtered list of only the factories that are certified? Furthermore, _how can they trust that the certification is valid_?
+For many brands and retailers, a common pain point in the sourcing process is the discovery and verification of the certification claims for a given factory. If a brand or retailer wishes to only do business with factories that have a given certification, where can they find a filtered list of only the factories that are certified? Furthermore, _how can they trust that the certification is valid_?
 
-In practice, each brand and retailer ends up independently verifying these claims with the ceritfying body that performed the original audit. This process is time-consuming, expensive, and error prone. 
+In practice, each brand and retailer ends up independently verifying these claims with the certifying body that performed the original audit. This process is time-consuming, expensive, and error prone. 
 {{% /blocks/lead %}}
 
 {{% blocks/section color="white" %}}

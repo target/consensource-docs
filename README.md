@@ -1,10 +1,14 @@
-# ConsenSource Docs Site
+# ConsenSource Docs
 
-Welcome to the GitHub repository for the ConsenSource docs site. The docs are hosted at https://target.github.io/consensource-docs.
+View at https://target.github.io/consensource-docs
+
+Docsite for https://github.com/target/consensource
+
+## Developer
 
 We use Hugo to format and generate our website, the Docsy theme for styling and site structure, and GitHub Pages to manage the deployment of the site. Hugo is an open-source static site generator that provides us with templates, content organization in a standard directory structure, and a website generation engine. You write the pages in Markdown, and Hugo wraps them up into a website.
 
-## Running the docs site locally
+### Running the docs site locally
 
 1. **Fork** this repo
 2. Clone your fork and `cd` into the repo:
@@ -30,7 +34,7 @@ We use Hugo to format and generate our website, the Docsy theme for styling and 
 
 **Note**: Any Hugo version above v0.59.1 will be incompatable with the current docs site [due to the new Markdown library introduced in v0.60.0](https://gohugo.io/news/0.60.0-relnotes/).
 
-## Updating the live docs site
+### Updating the live docs site
 
 The [GitHub Pages config](https://github.com/target/consensource-docs/settings) for this site is set to republish on any updates to the `docs` folder in the `master` branch.
 In our [config.toml](https://github.com/target/consensource-docs/blob/master/config.toml#L3), we have also configured Hugo to output it's build process to our `docs` folder.
@@ -41,7 +45,7 @@ To publish a new update to the live docs site:
 2. Open a PR to the `master` branch from your fork
 3. When that PR is merged, the docs site will automatically republish.
 
-### Useful resources
+#### Useful resources
 
 - [User guide for the Docsy theme](https://www.docsy.dev/docs/getting-started/)
 - [Hugo installation guide](https://gohugo.io/getting-started/installing/)
@@ -49,9 +53,9 @@ To publish a new update to the live docs site:
 - [Hugo site directory structure](https://gohugo.io/getting-started/directory-structure/)
 - [hugo server reference](https://gohugo.io/commands/hugo_server/)
 
-## ConsenSource Docs Site Layout
+### ConsenSource Docs Site Layout
 
-### Navbar
+#### Navbar
 
 The site theme has one Hugo menu (`main`), which defines the top navigation bar.
 You can find and adjust the definition of the menu in the [site configuration
@@ -76,7 +80,7 @@ description: A high-level overview of the ConsenSource application
 ---
 ```
 
-### Docs sidebar
+#### Docs sidebar
 
 The sidebar menu in the `docs` folder is automatically constructed by Docsy. The structure is based off of the folder structure in the `docs` folder - each subfolder that contains
 an `_index.md` file will create a new section in the sidebar. Siblings of the `_index.md` for a given folder will be displayed underneath the section for that folder with the value of `title` or
@@ -84,14 +88,14 @@ an `_index.md` file will create a new section in the sidebar. Siblings of the `_
 
 More info on the Docs sidebar can be found in the [Docsy documentation](https://www.docsy.dev/docs/adding-content/content/#organizing-your-documentation)
 
-## Working with the theme
+### Working with the theme
 
 The theme files are in the
 [`themes/docsy` directory](https://github.com/target/consensource-docs/tree/master/themes/docsy).
 **Do not change these files**, because they are overwritten each time we update
 the website to a later version of the theme, and your changes will be lost.
 
-## Styling your content
+### Styling your content
 
 The theme holds its styles in the
 [`assets/scss` directory](https://github.com/target/consensource-docs/tree/master/assets/scss).
@@ -124,7 +128,7 @@ The site's [front page](https://www.example.org/):
 - The page also uses the
   [linkdown block](https://www.docsy.dev/docs/adding-content/shortcodes/#blocks-link-down).
 
-## Using Hugo shortcodes
+### Using Hugo shortcodes
 
 Sometimes it's useful to define a snippet of information in one place and reuse
 it wherever we need it. For example, we want to be able to refer to the minimum
@@ -159,6 +163,6 @@ Useful Hugo docs:
 - [Shortcode templates](https://gohugo.io/templates/shortcode-templates/)
 - [Shortcodes](https://gohugo.io/content-management/shortcodes/)
 
-## Attribution
+### Attribution
 
 This README was heavily influenced and based off of the README for [Kubeflow](https://github.com/kubeflow/website), another project using Hugo for their docs site.

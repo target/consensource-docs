@@ -24,7 +24,7 @@ We use Hugo to format and generate our website, the Docsy theme for styling and 
    ```
 4. Install required npm dependencies:
    ```
-   npm i
+   yarn
    ```
 5. Start the web server:
 

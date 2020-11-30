@@ -22,6 +22,9 @@
     "kind-of": ">=6.0.3",
     "mem": ">=4.0.0",
     "minimist": "^1.2.2",
-    "postcss-cli": "^5.0.1"
+    "postcss-cli": "^5.0.1",
+  },
+  "resolutions": {
+    "yargs-parser": ">=13.1.2"
   }
 }

@@ -26,6 +26,7 @@
     "postcss-cli": "^5.0.1"
   },
   "resolutions": {
-    "yargs-parser": ">=13.1.2"
+    "yargs-parser": ">=13.1.2",
+    "y18n": ">=3.2.2"
   }
 }

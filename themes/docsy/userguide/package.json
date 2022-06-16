@@ -21,7 +21,7 @@
     "autoprefixer": "^9.5.0",
     "kind-of": ">=6.0.3",
     "mem": ">=4.0.0",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.6",
     "postcss-cli": "^5.0.1"
   },
   "resolutions": {
